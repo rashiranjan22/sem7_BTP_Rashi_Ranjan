@@ -1,0 +1,1390 @@
+# sent_id = pred-1
+# text
+1	सन	सन	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	nmod	_	_
+2	1967	1967	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	19	obl	_	_
+3	में	में	ADP	PSP	AdpType=Post	2	case	_	_
+4	हमारे	हम	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	5	nmod	_	_
+5	वैज्ञानिकों	वैज्ञानिक	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	19	nsubj	_	_
+6	ने	ने	ADP	PSP	AdpType=Post	5	case	_	_
+7	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	9	nmod	_	_
+8	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	7	case	_	_
+9	पैदावार	पैदावार	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	12	obl	_	_
+10	में	में	ADP	PSP	AdpType=Post	9	case	_	_
+11	बढ़ोत्‍तरी	बढ़ोत्‍तरी	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	12	compound	_	_
+12	करने	कर	VERB	VM	Case=Acc|VerbForm=Inf	19	advcl	_	_
+13	के	का	ADP	PSP	AdpType=Post	12	mark	_	_
+14	लिए	लिए	ADP	PSP	AdpType=Post	12	mark	_	_
+15	एक	एक	NUM	QC	NumType=Card	17	nummod	_	_
+16	विशाल	विशाल	ADJ	JJ	Case=Nom	17	amod	_	_
+17	कार्यक्रम	कार्यक्रम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	19	obj	_	_
+18	आरंभ	आरम्भ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	19	compound	_	_
+19	किया	कर	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	_
+20	NULL	NULL	PUNCT	SYM	_	19	punct	_	_
+21	जिसके	जो	PRON	PRP	Case=Acc,Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	40	obl	_	_
+22	फलस्वरूप	फलस्वरूप	ADP	PSP	_	21	case	_	_
+23	कुछ	कुछ	DET	QF	PronType=Ind	25	det	_	_
+24	ही	ही	PART	RP	_	23	dep	_	_
+25	वर्षों	वर्ष	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	40	obl	_	_
+26	में	में	ADP	PSP	AdpType=Post	25	case	_	_
+27	प्रति	प्रति	PART	RP	_	29	dep	_	_
+28	हेक्टेयर	हेक्टेयर	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	29	compound	_	_
+29	उत्पादन	उत्पादन	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	40	nsubj	_	_
+30	और	और	CCONJ	CC	_	32	cc	_	_
+31	कुल	कुल	DET	QF	PronType=Ind	32	det	_	_
+32	उत्पादन	उत्पादन	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	29	conj	_	_
+33	दोनों	दो	NOUN	NN	Case=Acc|Number=Plur|Person=3	40	obl	_	_
+34	में	में	ADP	PSP	AdpType=Post	33	case	_	_
+35	दुगने	दुग	VERB	VM	Case=Acc|VerbForm=Inf	37	amod	_	_
+36	से	से	ADP	PSP	AdpType=Post	35	mark	_	_
+37	ज्यादा	ज्यादा	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	39	nmod	_	_
+38	की	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Sing	37	case	_	_
+39	वृद्धि	वृद्धि	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	40	compound	_	_
+40	हुई	हो	VERB	VM	Aspect=Perf|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Act	17	acl:relcl	_	_
+41	।	।	PUNCT	SYM	_	19	punct	_	_
+
+
+# sent_id = pred-2
+# text
+1	भारत	भारत	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	11	nmod	_	_
+2	में	में	ADP	PSP	AdpType=Post	1	case	_	_
+3	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+4	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	3	case	_	_
+5	खेती	खेती	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	7	nmod	_	_
+6	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	5	case	_	_
+7	क्षेत्र	क्षेत्र	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	nsubj	_	_
+8	दुनिया	दुनिया	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	11	nmod	_	_
+9	में	में	ADP	PSP	AdpType=Post	8	case	_	_
+10	सबसे	सबसे	ADV	INTF	AdvType=Deg	15	advmod	_	_
+11	अधिक	अधिक	ADJ	JJ	PronType=Ind	0	root	_	_
+12	(	(	PUNCT	SYM	_	15	punct	_	_
+13	करीब	करीब	PART	RP	_	15	dep	_	_
+14	80	80	NUM	QCC	NumType=Card	15	dep	_	_
+15	लाख	लाख	NUM	QC	NumType=Card	16	nummod	_	_
+16	हेक्टेयर	हेक्टेयर	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	nmod	_	_
+17	)	)	PUNCT	SYM	_	16	punct	_	_
+18	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+19	और	और	CCONJ	CC	_	23	cc	_	_
+20	यही	यह	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	23	nsubj	_	_
+21	एकमात्र	एकमात्र	ADJ	JJ	_	23	amod	_	_
+22	ऐसा	ऐसा	DET	DEM	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	23	det	_	_
+23	देश	देश	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	conj	_	_
+24	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	23	cop	_	_
+25	जहाँ	जहाँ	PRON	PRP	Case=Nom|PronType=Prs	34	obl	_	_
+26	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	31	nmod	_	_
+27	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Plur	26	case	_	_
+28	चारों	चार	NUM	QC	Number=Plur|NumType=Card	31	nummod	_	_
+29	कृषि	कृषि	ADJ	JJC	Gender=Fem|Number=Sing|Person=3	30	case	_	_
+30	योग्य	योग्य	ADJ	JJ	Case=Acc	31	amod	_	_
+31	किस्मों	किस्म	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur|Person=3	33	nmod	_	_
+32	की	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Sing	31	case	_	_
+33	खेती	खेती	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	34	compound	_	_
+34	की	कर	VERB	VM	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Act	23	acl:relcl	_	_
+35	जाती	जा	AUX	VAUX	Aspect=Imp|Gender=Fem|Number=Sing|VerbForm=Part	34	aux:pass	_	_
+36	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	aux:pass	_	_
+37	।	।	PUNCT	SYM	_	11	punct	_	_
+
+
+# sent_id = pred-3
+# text
+1	किंतु	किंतु	CCONJ	CC	_	20	cc	_	_
+2	उत्पादन	उत्पादन	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	20	nmod	_	_
+3	में	में	ADP	PSP	AdpType=Post	2	case	_	_
+4	भारत	भारत	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	6	nmod	_	_
+5	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	4	case	_	_
+6	स्थान	स्थान	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	20	nsubj	_	_
+7	अमेरिका	अमेरिका	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	15	nmod	_	_
+8	,	COMMA	PUNCT	SYM	_	9	punct	_	_
+9	रुस	रुस	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	conj	_	_
+10	और	और	CCONJ	CC	_	11	cc	_	_
+11	चीन	चीन	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	conj	_	_
+12	जो	जो	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Prs	15	det	_	_
+13	सर्वाधिक	सर्वाधिक	ADJ	JJ	_	15	amod	_	_
+14	उत्पादक	उत्पादक	NOUN	NNC	Case=Nom	15	compound	_	_
+15	देश	देश	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	6	acl:relcl	_	_
+16	हैं	है	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	cop	_	_
+17	,	COMMA	PUNCT	SYM	_	15	punct	_	_
+18	के	का	ADP	PSP	AdpType=Post	7	case	_	_
+19	बाद	बाद	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	18	dislocated	_	_
+20	चौथा	चौथा	ADJ	QO	Gender=Masc|Number=Sing	0	root	_	_
+21	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	cop	_	_
+22	।	।	PUNCT	SYM	_	20	punct	_	_
+
+
+# sent_id = pred-4
+# text
+1	भारत	भारत	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	10	nmod	_	_
+2	में	में	ADP	PSP	AdpType=Post	1	case	_	_
+3	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+4	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	3	case	_	_
+5	उत्पादन	उत्पादन	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	7	nmod	_	_
+6	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	5	case	_	_
+7	कमी	कमी	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	10	nmod	_	_
+8	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	7	case	_	_
+9	प्रमुख	प्रमुख	ADJ	JJ	Case=Nom	10	amod	_	_
+10	कारण	कारण	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+11	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+12	कि	कि	SCONJ	CC	_	31	mark	_	_
+13	यहाँ	यहाँ	PRON	PRP	Case=Nom|PronType=Prs	31	nmod	_	_
+14	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	16	nmod	_	_
+15	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	14	case	_	_
+16	खेती	खेती	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	18	nmod	_	_
+17	वाले	वाला	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	16	case	_	_
+18	क्षेत्र	क्षेत्र	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	31	nmod	_	_
+19	में	में	ADP	PSP	AdpType=Post	18	case	_	_
+20	से	से	ADP	PSP	AdpType=Post	18	case	_	_
+21	केवल	केवल	PART	RP	_	22	dep	_	_
+22	एक	एक	NUM	QC	NumType=Card	23	nummod	_	_
+23	चौथाई	चौथाई	NUM	QC	NumType=Card	24	nummod	_	_
+24	हिस्से	हिस्सा	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	31	nmod	_	_
+25	में	में	ADP	PSP	AdpType=Post	24	case	_	_
+26	ही	ही	PART	RP	_	24	dep	_	_
+27	सिंचाई	सिंचाई	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	30	nmod	_	_
+28	की	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Sing	27	case	_	_
+29	उचित	उचित	ADJ	JJ	Case=Nom	30	amod	_	_
+30	सुविधा	सुविधा	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	31	nsubj	_	_
+31	उपलब्ध	उपलब्ध	ADJ	JJ	_	10	nmod	_	_
+32	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	31	cop	_	_
+33	और	और	CCONJ	CC	_	39	cc	_	_
+34	शेष	शेष	ADJ	JJ	Case=Nom	35	amod	_	_
+35	खेती	खेती	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	39	nsubj	_	_
+36	वर्षा	वर्षा	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	39	obl	_	_
+37	पर	पर	ADP	PSP	AdpType=Post	36	case	_	_
+38	निर्भर	निर्भर	ADJ	JJ	_	39	compound	_	_
+39	करती	कर	VERB	VM	Aspect=Imp|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Act	31	conj	_	_
+40	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	39	aux	_	_
+41	।	।	PUNCT	SYM	_	10	punct	_	_
+
+
+# sent_id = pred-5
+# text
+1	राज्यों	राज्य	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	11	nmod	_	_
+2	में	में	ADP	PSP	AdpType=Post	1	case	_	_
+3	प्रति	प्रति	PART	RP	_	4	dep	_	_
+4	एकड़	एकड	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+5	उत्पादन	उत्पादन	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	7	nmod	_	_
+6	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	5	case	_	_
+7	हिसाब	हिसाब	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	11	obl	_	_
+8	से	से	ADP	PSP	AdpType=Post	7	case	_	_
+9	महाराष्‍ट्र	महाराष्ट्र	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	nsubj	_	_
+10	सबसे	सबसे	ADV	INTF	AdvType=Deg	11	advmod	_	_
+11	अग्रणी	अग्रणी	ADJ	JJ	_	0	root	_	_
+12	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+13	किंतु	किंतु	CCONJ	CC	_	20	cc	_	_
+14	कुल	कुल	DET	QF	PronType=Ind	15	det	_	_
+15	उत्पादन	उत्पादन	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	20	nmod	_	_
+16	में	में	ADP	PSP	AdpType=Post	15	case	_	_
+17	गुजरात	गुजरात	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	18	nmod	_	_
+18	सूची	सूची	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	20	nmod	_	_
+19	में	में	ADP	PSP	AdpType=Post	18	case	_	_
+20	सर्वोपरि	सर्वोपरि	ADJ	JJ	_	11	conj	_	_
+21	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	cop	_	_
+22	।	।	PUNCT	SYM	_	11	punct	_	_
+
+
+# sent_id = pred-6
+# text
+1	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
+2	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	1	case	_	_
+3	खेती	खेती	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	14	obl	_	_
+4	में	में	ADP	PSP	AdpType=Post	3	case	_	_
+5	लगभग	लगभग	PART	RP	_	7	dep	_	_
+6	4.5	4.5	NUM	QCC	NumType=Card	7	dep	_	_
+7	करोड़	करोड	NUM	QC	Case=Acc|NumType=Card	9	advmod	_	_
+8	से	से	ADP	PSP	AdpType=Post	7	case	_	_
+9	अधिक	अधिक	DET	QF	PronType=Ind	10	amod	_	_
+10	लोग	लोग	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	14	nsubj	_	_
+11	रोज़गार	रोजगार	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	14	obl	_	_
+12	में	में	ADP	PSP	AdpType=Post	11	case	_	_
+13	व्यस्त	व्यस्त	ADJ	JJ	_	14	compound	_	_
+14	हैं	है	VERB	VM	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+15	तथा	तथा	CCONJ	CC	_	19	cc	_	_
+16	इसी	यह	PRON	PRP	Case=Acc|Number=Sing|Person=3|PronType=Prs	19	obl	_	_
+17	से	से	ADP	PSP	AdpType=Post	16	case	_	_
+18	आजीविका	आजीविका	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	19	compound	_	_
+19	चलाते	चला	VERB	VM	Aspect=Imp|Gender=Masc|Number=Plur|Person=3|VerbForm=Part|Voice=Act	14	conj	_	_
+20	हैं	है	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	aux	_	_
+21	।	।	PUNCT	SYM	_	14	punct	_	_
+
+
+# sent_id = pred-7
+# text
+1	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
+2	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Plur	1	case	_	_
+3	खेतों	खेत	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	5	nmod	_	_
+4	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	3	case	_	_
+5	सौंदर्य	सौंदर्य	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	7	nmod	_	_
+6	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	5	case	_	_
+7	वर्णन	वर्णन	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	10	compound	_	_
+8	शब्दों	शब्द	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	10	obl	_	_
+9	में	में	ADP	PSP	AdpType=Post	8	case	_	_
+10	करना	कर	VERB	VM	Case=Nom|VerbForm=Inf	12	nsubj	_	_
+11	कठिन	कठिन	ADJ	JJ	_	12	obj	_	_
+12	है	है	VERB	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+13	-	-	PUNCT	SYM	_	12	punct	_	_
+
+
+# sent_id = pred-8
+# text
+1	ऐसा	ऐसा	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	2	obl	_	_
+2	लग	लग	VERB	VM	Gender=Masc|Number=Sing|Voice=Act	0	root	_	_
+3	रहा	रह	AUX	VAUX	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	2	aux	_	_
+4	था	था	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	2	aux:pass	_	_
+5	मानों	मान	VERB	VM	Case=Nom|VerbForm=Inf	2	advcl	_	_
+6	स्वर्ग	स्वर्ग	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	14	nsubj	_	_
+7	ने	ने	ADP	PSP	AdpType=Post	6	case	_	_
+8	स्वयं	स्वयं	PRON	PRP	Case=Nom|PronType=Prs	6	nmod	_	_
+9	ही	ही	PART	RP	_	8	dep	_	_
+10	इस	यह	DET	DEM	Case=Acc|Number=Sing|Person=3|PronType=Dem	11	det	_	_
+11	धरा	धरा	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	14	obl	_	_
+12	पर	पर	ADP	PSP	AdpType=Post	11	case	_	_
+13	सफेदी	सफेदी	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	14	obj	_	_
+14	बिखेर	बिख	VERB	VM	Gender=Fem|Number=Sing|Voice=Act	1	acl	_	_
+15	दी	दे	AUX	VAUX	Aspect=Perf|Gender=Fem|Number=Sing|VerbForm=Part	14	aux	_	_
+16	हो	हो	AUX	VAUX	_	14	aux:pass	_	_
+17	।	।	PUNCT	SYM	_	2	punct	_	_
+
+
+# sent_id = pred-9
+# text
+1	बीजकोष	बीजकोष	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
+2	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Plur	1	case	_	_
+3	बीजों	बीज	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	5	obl	_	_
+4	से	से	ADP	PSP	AdpType=Post	3	case	_	_
+5	निकले	निकल	VERB	VM	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part	7	acl	_	_
+6	हज़ारों	हिार	NUM	QC	Number=Plur|NumType=Card	7	nummod	_	_
+7	रेशों	रेश	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	9	nmod	_	_
+8	की	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Sing	7	case	_	_
+9	मुस्कराहट	मुस्कराहट	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	14	nsubj	_	_
+10	और	और	CCONJ	CC	_	11	cc	_	_
+11	चमक	चमक	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	9	conj	_	_
+12	मन	मन	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	14	nsubj	_	_
+13	को	को	ADP	PSP	AdpType=Post	12	case	_	_
+14	मोह	मोह	VERB	VM	Gender=Fem|Number=Sing|Voice=Act	0	root	_	_
+15	लेने	ले	AUX	VAUX	Gender=Fem|Number=Sing|VerbForm=Inf|Voice=Act	14	aux	_	_
+16	वाली	वाला	AUX	VAUX	Gender=Fem|Number=Sing|Person=3	14	aux	_	_
+17	थी	था	AUX	VAUX	Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	14	aux:pass	_	_
+18	और	और	CCONJ	CC	_	20	cc	_	_
+19	ऐसा	ऐसा	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	20	obl	_	_
+20	लगता	लग	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	14	conj	_	_
+21	था	था	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	20	aux	_	_
+22	मानों	मान	VERB	VM	Case=Nom|Gender=Masc|Number=Plur|Person=3	20	nsubj	_	_
+23	ये	यह	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	36	nsubj	_	_
+24	4	4	NUM	QC	Case=Acc|NumType=Card	27	nmod	_	_
+25	से	से	ADP	PSP	AdpType=Post	24	case	_	_
+26	6	6	NUM	QC	NumType=Card	27	nummod	_	_
+27	फुट	फुट	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	28	obl	_	_
+28	ऊँचे	ऊँचा	ADJ	JJ	Case=Acc|Gender=Masc|Number=Plur	29	amod	_	_
+29	पौधों	पौध	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	36	nmod	_	_
+30	पर	पर	ADP	PSP	AdpType=Post	29	case	_	_
+31	सजावट	सजावट	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	34	nmod	_	_
+32	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	31	case	_	_
+33	जादुई	जादुई	ADJ	JJ	Case=Acc	34	amod	_	_
+34	आकर्षण	आकर्षण	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	36	nmod	_	_
+35	वाली	वाला	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Plur	34	case	_	_
+36	कलाकृतियाँ	कलाकृति	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur|Person=3	20	obj	_	_
+37	हों	है	AUX	VM	Gender=Masc|Number=Plur|Person=3|Voice=Act	36	cop	_	_
+38	।	।	PUNCT	SYM	_	14	punct	_	_
+
+
+# sent_id = pred-10
+# text
+1	डा.	डा.	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
+2	जोशी	जोशी	PROPN	NNP	Case=Acc|Number=Sing|Person=3	6	nsubj	_	_
+3	ने	ने	ADP	PSP	AdpType=Post	2	case	_	_
+4	छात्रों	छात्र	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	6	iobj	_	_
+5	को	को	ADP	PSP	AdpType=Post	4	case	_	_
+6	बताया	बता	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	_
+7	कि	कि	SCONJ	CC	_	12	mark	_	_
+8	कपास	कपास	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	12	nsubj	_	_
+9	एक	एक	NUM	QC	NumType=Card	12	nummod	_	_
+10	बीज	बीज	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	12	compound	_	_
+11	-	-	PUNCT	SYM	_	12	punct	_	_
+12	तंतु	तंतु	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	obj	_	_
+13	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	_
+14	जो	जो	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	23	nsubj	_	_
+15	गौसीपियम	गौसीपियम	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	19	nmod	_	_
+16	(	(	PUNCT	SYM	_	17	punct	_	_
+17	Gossypium	Gossypium	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	15	nmod	_	_
+18	)	)	PUNCT	SYM	_	17	punct	_	_
+19	प्रजाति	प्रजाति	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	21	nmod	_	_
+20	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	19	case	_	_
+21	पौधे	पौधा	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	23	obj	_	_
+22	से	से	ADP	PSP	AdpType=Post	21	case	_	_
+23	उगता	उग	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	12	acl:relcl	_	_
+24	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	aux	_	_
+25	।	।	PUNCT	SYM	_	6	punct	_	_
+
+
+# sent_id = pred-11
+# text
+1	यह	यह	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+2	मालवेसी	मालवेसी	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	nmod	_	_
+3	(	(	PUNCT	SYM	_	4	punct	_	_
+4	Malvaceae	Malvaceae	PROPN	NNP	Case=Nom|Gender=Fem|Number=Sing|Person=3	2	nmod	_	_
+5	)	)	PUNCT	SYM	_	4	punct	_	_
+6	परिवार	परिवार	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	8	nmod	_	_
+7	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	6	case	_	_
+8	सदस्य	सदस्य	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+9	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+10	NULL	NULL	PUNCT	SYM	_	8	nmod	_	_
+11	जो	जो	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	24	nsubj:pass	_	_
+12	बोलचाल	बोलचाल	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	14	nmod	_	_
+13	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	12	case	_	_
+14	भाषा	भाषा	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	24	obl	_	_
+15	में	में	ADP	PSP	AdpType=Post	14	case	_	_
+16	मैलो	मैलो	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	20	nmod	_	_
+17	(	(	PUNCT	SYM	_	18	punct	_	_
+18	Mallow	Mallow	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	16	nmod	_	_
+19	)	)	PUNCT	SYM	_	18	punct	_	_
+20	परिवार	परिवार	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	22	nmod	_	_
+21	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	20	case	_	_
+22	नाम	नाम	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	24	acl	_	_
+23	से	से	ADP	PSP	AdpType=Post	22	case	_	_
+24	जाना	जा	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	8	acl:relcl	_	_
+25	जाता	जा	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	24	aux:pass	_	_
+26	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux:pass	_	_
+27	।	।	PUNCT	SYM	_	8	punct	_	_
+
+
+# sent_id = pred-12
+# text
+1	गौसीपियम	गौसीपियम	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	nmod	_	_
+2	प्रजाति	प्रजाति	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	9	nmod	_	_
+3	के	का	ADP	PSP	AdpType=Post	2	case	_	_
+4	अंतर्गत	अंतर्गत	ADP	PSP	AdpType=Post	2	case	_	_
+5	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	8	nmod	_	_
+6	की	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Plur	5	case	_	_
+7	36	36	NUM	QC	NumType=Card	8	nummod	_	_
+8	जातियाँ	जाति	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur|Person=3	9	nsubj	_	_
+9	मान्य	मान्य	ADJ	JJ	_	0	root	_	_
+10	हैं	है	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+11	परंतु	परंतु	CCONJ	CC	_	29	cc	_	_
+12	अच्छे	अच्छा	ADJ	JJ	Case=Acc|Gender=Masc|Number=Sing	13	amod	_	_
+13	किस्म	किस्म	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	15	nmod	_	_
+14	की	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Sing	13	case	_	_
+15	कपास	कपास	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	17	obj	_	_
+16	पैदा	पैदा	ADJ	JJ	_	17	compound	_	_
+17	करने	कर	VERB	VM	Case=Acc|VerbForm=Inf	29	advcl	_	_
+18	के	का	ADP	PSP	AdpType=Post	17	mark	_	_
+19	लिए	लिए	ADP	PSP	AdpType=Post	17	mark	_	_
+20	इनमें	यह	PRON	PRP	Case=Acc,Ine|Number=Plur|Person=3|PronType=Prs	29	obl	_	_
+21	से	से	ADP	PSP	AdpType=Post	20	case	_	_
+22	केवल	केवल	PART	RP	_	23	dep	_	_
+23	चार	चार	NUM	QC	NumType=Card	24	nummod	_	_
+24	प्रकार	प्रकार	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	26	nmod	_	_
+25	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	24	case	_	_
+26	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	28	nmod	_	_
+27	की	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Sing	26	case	_	_
+28	खेती	खेती	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	29	compound	_	_
+29	की	कर	VERB	VM	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Act	9	conj	_	_
+30	जाती	जा	AUX	VAUX	Aspect=Imp|Gender=Fem|Number=Sing|VerbForm=Part	29	aux:pass	_	_
+31	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	aux:pass	_	_
+32	क्योंकि	क्योंकि	SCONJ	CC	_	35	mark	_	_
+33	अन्य	अन्य	ADJ	JJ	Case=Nom	34	amod	_	_
+34	जातियाँ	जाति	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur|Person=3	35	nsubj	_	_
+35	जंगली	जंगली	ADJ	JJ	_	29	obl	_	_
+36	हैं	है	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	35	cop	_	_
+37	।	।	PUNCT	SYM	_	9	punct	_	_
+
+
+# sent_id = pred-13
+# text
+1	गौसीपियम	गौसीपियम	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
+2	हिर्सुटम	हिर्सुटम	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	12	nsubj	_	_
+3	(	(	PUNCT	SYM	_	5	punct	_	_
+4	Gossypium	Gossypium	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	5	compound	_	_
+5	Hirsutum	Hirsutum	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	nmod	_	_
+6	)	)	PUNCT	SYM	_	5	punct	_	_
+7	इनमें	यह	PRON	PRP	Case=Acc,Ine|Number=Plur|Person=3|PronType=Prs	12	nmod	_	_
+8	से	से	ADP	PSP	AdpType=Post	7	case	_	_
+9	सबसे	सबसे	ADV	INTF	AdvType=Deg	10	advmod	_	_
+10	महत्‍त्वपूर्ण	महत्‍त्वपूर्ण	ADJ	JJ	Case=Nom	12	amod	_	_
+11	वानस्पतिक	वानस्पतिक	ADJ	JJ	Case=Nom	10	amod	_	_
+12	जाति	जाति	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	0	root	_	_
+13	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	_
+14	जो	जो	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	22	nsubj:pass	_	_
+15	मूल	मूल	ADJ	JJ	Case=Acc	16	amod	_	_
+16	रूप	रूप	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	22	obl	_	_
+17	से	से	ADP	PSP	AdpType=Post	16	case	_	_
+18	कंबोडिया	कंबोडिया	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	22	obl	_	_
+19	तथा	तथा	CCONJ	CC	_	20	cc	_	_
+20	मैक्सिको	मैक्सिको	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	18	conj	_	_
+21	में	में	ADP	PSP	AdpType=Post	18	case	_	_
+22	पाई	पा	VERB	VM	Aspect=Perf|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Act	12	acl:relcl	_	_
+23	जाती	जा	AUX	VAUX	Aspect=Imp|Gender=Fem|Number=Sing|VerbForm=Part	22	aux:pass	_	_
+24	थी	था	AUX	VAUX	Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	22	aux:pass	_	_
+25	परंतु	परंतु	CCONJ	CC	_	33	cc	_	_
+26	अब	अब	PRON	PRP	Case=Nom|PronType=Prs	33	obl	_	_
+27	यह	यह	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	33	nsubj:pass	_	_
+28	अमेरिका	अमेरिका	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	31	nmod	_	_
+29	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	28	case	_	_
+30	विशाल	विशाल	ADJ	JJ	Case=Acc	31	amod	_	_
+31	भाग	भाग	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	33	obl	_	_
+32	में	में	ADP	PSP	AdpType=Post	31	case	_	_
+33	उगाई	उगा	VERB	VM	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Pass	22	conj	_	_
+34	जाने	जा	AUX	VAUX	Gender=Masc|Number=Sing|Person=3|VerbForm=Inf	33	aux:pass	_	_
+35	लगी	लग	AUX	VAUX	Aspect=Perf|Gender=Fem|Number=Sing|VerbForm=Part	33	aux:pass	_	_
+36	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	aux:pass	_	_
+37	।	।	PUNCT	SYM	_	12	punct	_	_
+
+
+# sent_id = pred-14
+# text
+1	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
+2	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	1	case	_	_
+3	फसल	फसल	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	10	obl	_	_
+4	में	में	ADP	PSP	AdpType=Post	3	case	_	_
+5	कई	कई	DET	QF	PronType=Ind	6	det	_	_
+6	गुणों	गुण	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	8	nsubj	_	_
+7	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	6	case	_	_
+8	होना	हो	VERB	VM	Case=Nom|VerbForm=Inf	10	nsubj	_	_
+9	आवश्यक	आवश्यक	ADJ	JJ	_	10	obj	_	_
+10	है	है	VERB	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+11	।	।	PUNCT	SYM	_	10	punct	_	_
+
+
+# sent_id = pred-15
+# text
+1	इनमें	यह	PRON	PRP	Case=Acc,Ine|Number=Plur|Person=3|PronType=Prs	6	nmod	_	_
+2	से	से	ADP	PSP	AdpType=Post	1	case	_	_
+3	कुछ	कुछ	DET	QF	PronType=Ind	4	det	_	_
+4	गुण	गुण	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	6	nsubj	_	_
+5	इस	यह	DET	DEM	Case=Acc|Number=Sing|Person=3|PronType=Dem	6	det	_	_
+6	प्रकार	प्रकार	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+7	हैं	है	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+8	:	:	PUNCT	SYM	_	6	punct	_	_
+
+
+# sent_id = pred-16
+# text
+1	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	6	nmod	_	_
+2	की	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Plur	1	case	_	_
+3	नई	नया	ADJ	JJ	Case=Nom|Gender=Fem|Number=Plur	6	amod	_	_
+4	-	-	PUNCT	SYM	_	3	punct	_	_
+5	नई	नया	ADJ	RDP	Case=Acc|Echo=Rdp|Gender=Fem	3	compound	_	_
+6	किस्में	किस्म	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur|Person=3	8	obj	_	_
+7	जारी	जारी	ADJ	JJ	_	8	compound	_	_
+8	की	कर	VERB	VM	Aspect=Perf|Gender=Fem|Number=Plur|Person=3|VerbForm=Part|Voice=Pass	0	root	_	_
+9	जा	जा	AUX	VAUX	_	8	aux:pass	_	_
+10	रहीं	रह	AUX	VAUX	Aspect=Perf|Gender=Fem|Number=Plur|VerbForm=Part	8	aux:pass	_	_
+11	हैं	है	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	_	_
+12	जिनमें	जो	PRON	PRP	Case=Acc,Ine|Number=Plur|Person=3|PronType=Prs	16	obl	_	_
+13	उपरोक्‍त	उपरोक्त	ADJ	JJ	Case=Nom	14	amod	_	_
+14	गुण	गुण	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	16	nsubj	_	_
+15	विद्यमान	विद्यमान	ADJ	JJ	_	16	compound	_	_
+16	हों	हो	VERB	VM	Gender=Masc|Number=Plur|Person=3|Voice=Act	6	acl:relcl	_	_
+17	।	।	PUNCT	SYM	_	8	punct	_	_
+
+
+# sent_id = pred-17
+# text
+1	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
+2	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	1	case	_	_
+3	उत्पादन	उत्पादन	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	22	obl	_	_
+4	के	का	ADP	PSP	AdpType=Post	3	case	_	_
+5	लिए	लिए	ADP	PSP	AdpType=Post	3	case	_	_
+6	प्रजनन	प्रजनन	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	10	nmod	_	_
+7	(	(	PUNCT	SYM	_	8	punct	_	_
+8	breeding	breeding	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	10	nmod	_	_
+9	)	)	PUNCT	SYM	_	8	punct	_	_
+10	कार्यक्रम	कार्यक्रम	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	12	nmod	_	_
+11	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	10	case	_	_
+12	माध्यम	माध्यम	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	22	obl	_	_
+13	से	से	ADP	PSP	AdpType=Post	12	case	_	_
+14	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	17	nmod	_	_
+15	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	14	case	_	_
+16	प्रत्येक	प्रत्येक	DET	QF	PronType=Ind	17	det	_	_
+17	जाति	जाति	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	22	obl	_	_
+18	में	में	ADP	PSP	AdpType=Post	17	case	_	_
+19	विभिन्न	विभिन्न	ADJ	JJ	Case=Nom	20	amod	_	_
+20	किस्में	किस्म	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur|Person=3	22	obj	_	_
+21	तैयार	तैयार	ADJ	JJ	_	22	compound	_	_
+22	की	कर	VERB	VM	Aspect=Perf|Gender=Fem|Number=Plur|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+23	गई	जा	AUX	VAUX	Aspect=Perf|Gender=Fem|Number=Plur|VerbForm=Part	22	aux:pass	_	_
+24	हैं	है	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	aux:pass	_	_
+25	।	।	PUNCT	SYM	_	22	punct	_	_
+
+
+# sent_id = pred-18
+# text
+1	दो	दो	NUM	QC	NumType=Card	2	nummod	_	_
+2	जातियों	जाति	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur|Person=3	4	nmod	_	_
+3	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Plur	2	case	_	_
+4	गुणसूत्रों	गुणसूत्र	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	6	obj	_	_
+5	को	को	ADP	PSP	AdpType=Post	4	case	_	_
+6	मिलाकर	मिला	VERB	VM	VerbForm=Conv	15	advcl	_	_
+7	अपनी	अपना	PRON	PRP	Case=Nom|Gender=Fem|PronType=Prs	8	nmod	_	_
+8	इच्छानुसार	इच्छानुसार	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	15	obl	_	_
+9	संकर	संकर	ADJ	JJ	Case=Nom	13	amod	_	_
+10	(	(	PUNCT	SYM	_	11	punct	_	_
+11	hybrid	hybrid	ADJ	JJ	Case=Nom	9	amod	_	_
+12	)	)	PUNCT	SYM	_	11	punct	_	_
+13	पौधे	पौधा	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	15	obj	_	_
+14	विकसित	विकसित	ADJ	JJ	_	15	compound	_	_
+15	किए	कर	VERB	VM	Aspect=Perf|Gender=Masc|Number=Plur|Person=3|VerbForm=Part|Voice=Pass	0	root	_	_
+16	जा	जा	AUX	VAUX	_	15	aux:pass	_	_
+17	सकते	सक	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Plur|VerbForm=Part	15	aux:pass	_	_
+18	हैं	है	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	_	_
+19	।	।	PUNCT	SYM	_	15	punct	_	_
+
+
+# sent_id = pred-19
+# text
+1	अभी	अभी	PRON	PRP	Case=Nom|PronType=Prs	24	obl	_	_
+2	हाल	हाल	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	24	obl	_	_
+3	ही	ही	PART	RP	_	2	dep	_	_
+4	में	में	ADP	PSP	AdpType=Post	2	case	_	_
+5	कुछ	कुछ	DET	QF	PronType=Ind	6	det	_	_
+6	वर्ष	वर्ष	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	24	obl	_	_
+7	पूर्व	पूर्व	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	6	case	_	_
+8	आनुवंशिक	आनुवंशिक	ADJ	JJ	Case=Acc	9	amod	_	_
+9	परिवर्तन	परिवर्तन	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	24	nsubj:pass	_	_
+10	(	(	PUNCT	SYM	_	12	punct	_	_
+11	genetic	genetic	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	12	compound	_	_
+12	modification	modification	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	9	nmod	_	_
+13	)	)	PUNCT	SYM	_	12	punct	_	_
+14	द्वारा	द्वारा	ADP	PSP	AdpType=Post	9	dislocated	_	_
+15	अमेरिका	अमेरिका	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	24	obl	_	_
+16	में	में	ADP	PSP	AdpType=Post	15	case	_	_
+17	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	21	nmod	_	_
+18	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	17	case	_	_
+19	एक	एक	NUM	QC	NumType=Card	21	nummod	_	_
+20	नए	नया	ADJ	JJ	Case=Acc|Gender=Masc|Number=Sing	21	amod	_	_
+21	बीज	बीज	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	23	nmod	_	_
+22	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	21	case	_	_
+23	निर्माण	निर्माण	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	24	compound	_	_
+24	किया	कर	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+25	गया	जा	AUX	VAUX	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	24	aux:pass	_	_
+26	जो	जो	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	38	nsubj	_	_
+27	बीटी	बीटी	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	29	compound	_	_
+28	कॉटन	कॉटन	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	29	compound	_	_
+29	सीड	सीड	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	36	nmod	_	_
+30	(	(	PUNCT	SYM	_	33	punct	_	_
+31	Bt	Bt	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	33	compound	_	_
+32	cotton	cotton	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	33	compound	_	_
+33	seed	seed	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	29	nmod	_	_
+34	)	)	PUNCT	SYM	_	33	punct	_	_
+35	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	29	dislocated	_	_
+36	नाम	नाम	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	38	acl	_	_
+37	से	से	ADP	PSP	AdpType=Post	36	case	_	_
+38	जाना	जा	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	21	acl:relcl	_	_
+39	जाता	जा	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	38	aux	_	_
+40	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	38	aux:pass	_	_
+41	।	।	PUNCT	SYM	_	24	punct	_	_
+
+
+# sent_id = pred-20
+# text
+1	यह	यह	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	2	det	_	_
+2	बीज	बीज	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	15	nsubj	_	_
+3	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+4	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	3	case	_	_
+5	फसल	फसल	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	15	iobj	_	_
+6	को	को	ADP	PSP	AdpType=Post	5	case	_	_
+7	बीमारियों	बीमारी	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur|Person=3	11	obl	_	_
+8	और	और	CCONJ	CC	_	9	cc	_	_
+9	कीड़ों	कीट	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	7	conj	_	_
+10	से	से	ADP	PSP	AdpType=Post	7	case	_	_
+11	बचाने	बचा	VERB	VM	Case=Acc|Number=Sing|VerbForm=Inf	13	nmod	_	_
+12	की	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Sing	11	mark	_	_
+13	शक्‍ति	शक्ति	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	15	obj	_	_
+14	प्रदान	प्रदान	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	15	compound	_	_
+15	करता	कर	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+16	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux	_	_
+17	।	।	PUNCT	SYM	_	15	punct	_	_
+
+
+# sent_id = pred-21
+# text
+1	इसके	यह	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod	_	_
+2	उपयोग	उपयोग	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	14	obl	_	_
+3	से	से	ADP	PSP	AdpType=Post	2	case	_	_
+4	अमेरिका	अमेरिका	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	14	obl	_	_
+5	और	और	CCONJ	CC	_	6	cc	_	_
+6	चीन	चीन	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	4	conj	_	_
+7	में	में	ADP	PSP	AdpType=Post	4	case	_	_
+8	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	10	nmod	_	_
+9	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	8	case	_	_
+10	उत्पादन	उत्पादन	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	14	obl	_	_
+11	में	में	ADP	PSP	AdpType=Post	10	case	_	_
+12	काफी	काफी	DET	QF	PronType=Ind	13	det	_	_
+13	वृद्धि	वृद्धि	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	14	compound	_	_
+14	हुई	हो	VERB	VM	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+15	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	_	_
+16	।	।	PUNCT	SYM	_	14	punct	_	_
+
+
+# sent_id = pred-22
+# text
+1	इस	यह	DET	DEM	Case=Acc|Number=Sing|Person=3|PronType=Dem	2	det	_	_
+2	बीज	बीज	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	6	obj	_	_
+3	को	को	ADP	PSP	AdpType=Post	2	case	_	_
+4	भारतवर्ष	भारतवर्ष	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	6	obl	_	_
+5	में	में	ADP	PSP	AdpType=Post	4	case	_	_
+6	बोने	बो	VERB	VM	Case=Acc|Number=Sing|VerbForm=Inf	8	nmod	_	_
+7	की	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Sing	6	mark	_	_
+8	अनुमति	अनुमति	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	12	nsubj	_	_
+9	हाल	हाल	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	12	obl	_	_
+10	ही	ही	PART	RP	_	9	dep	_	_
+11	में	में	ADP	PSP	AdpType=Post	9	case	_	_
+12	मिली	मिल	VERB	VM	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+13	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
+14	।	।	PUNCT	SYM	_	12	punct	_	_
+
+
+# sent_id = pred-23
+# text
+1	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	4	nmod	_	_
+2	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	1	case	_	_
+3	सर्वोत्‍तम	सर्वोत्तम	ADJ	JJ	Case=Acc	4	amod	_	_
+4	पैदावार	पैदावार	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	26	obl	_	_
+5	के	का	ADP	PSP	AdpType=Post	4	case	_	_
+6	लिए	लिए	ADP	PSP	AdpType=Post	4	case	_	_
+7	गर्म	गर्म	ADJ	JJ	Case=Nom	8	amod	_	_
+8	जलवायु	जलवायु	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	10	nmod	_	_
+9	पर्याप्‍त	पर्याप्त	ADJ	JJ	Case=Acc	10	amod	_	_
+10	नमी	नमी	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	26	obl	_	_
+11	तथा	तथा	CCONJ	CC	_	16	cc	_	_
+12	दोमट	दोमट	ADJ	JJ	Case=Acc|Gender=Fem|Number=Sing|Person=3	16	amod	_	_
+13	(	(	PUNCT	SYM	_	14	punct	_	_
+14	loamy	loamy	ADJ	JJ	Case=Acc	12	punct	_	_
+15	)	)	PUNCT	SYM	_	14	punct	_	_
+16	मिट्टी	मिट्टी	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	10	conj	_	_
+17	के	का	ADP	PSP	AdpType=Post	16	case	_	_
+18	साथ	साथ	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	16	case	_	_
+19	-	-	PUNCT	SYM	_	20	punct	_	_
+20	साथ	साथ	NOUN	RDP	AdpType=Post|Case=Nom|Echo=Rdp|Gender=Masc|Number=Sing|Person=3	16	compound	_	_
+21	सिंचाई	सिंचाई	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	25	nmod	_	_
+22	की	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Plur	21	case	_	_
+23	भी	भी	PART	RP	_	21	dep	_	_
+24	अच्छी	अच्छा	ADJ	JJ	Case=Nom|Gender=Fem|Number=Plur	25	amod	_	_
+25	सुविधाएं	सुविधा	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur|Person=3	26	compound	_	_
+26	होनी	हो	VERB	VM	Gender=Fem|VerbForm=Inf|Voice=Act	0	root	_	_
+27	चाहिए	चाहिए	AUX	VAUX	_	26	aux	_	_
+28	।	।	PUNCT	SYM	_	26	punct	_	_
+
+
+# sent_id = pred-24
+# text
+1	क्षेत्र	क्षेत्र	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
+2	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	1	case	_	_
+3	जलवायु	जलवायु	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	25	obl	_	_
+4	,	COMMA	PUNCT	SYM	_	7	punct	_	_
+5	मिट्टी	मिट्टी	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	7	nmod	_	_
+6	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	5	case	_	_
+7	प्रकार	प्रकार	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	conj	_	_
+8	एवं	एवं	CCONJ	CC	_	15	cc	_	_
+9	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	11	nmod	_	_
+10	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	9	case	_	_
+11	जाति	जाति	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	3	conj	_	_
+12	व	व	CCONJ	CC	_	13	cc	_	_
+13	किस्म	किस्म	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	15	nmod	_	_
+14	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	13	case	_	_
+15	आधार	आधार	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	conj	_	_
+16	पर	पर	ADP	PSP	AdpType=Post	15	case	_	_
+17	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	19	nmod	_	_
+18	की	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Sing	17	case	_	_
+19	बुवाई	बुवाई	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	25	compound	_	_
+20	अलग	अलग	ADJ	JJ	Case=Acc	23	amod	_	_
+21	-	-	PUNCT	SYM	_	20	punct	_	_
+22	अलग	अलग	ADJ	RDP	Case=Acc|Echo=Rdp	20	compound	_	_
+23	समय	समय	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	25	obl	_	_
+24	पर	पर	ADP	PSP	AdpType=Post	23	case	_	_
+25	की	कर	VERB	VM	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+26	जाती	जा	AUX	VAUX	Aspect=Imp|Gender=Fem|Number=Sing|VerbForm=Part	25	aux:pass	_	_
+27	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	aux:pass	_	_
+28	।	।	PUNCT	SYM	_	25	punct	_	_
+
+
+# sent_id = pred-25
+# text
+1	उत्‍तरी	उत्‍तरी	ADJ	JJ	Case=Acc	2	amod	_	_
+2	भारत	भारत	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	10	obl	_	_
+3	में	में	ADP	PSP	AdpType=Post	2	case	_	_
+4	कपास	कपास	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	10	obj	_	_
+5	प्रायः	प्रायः	ADV	RB	_	10	advmod	_	_
+6	मई	मई	PROPN	NNP	Case=Acc|Gender=Fem|Number=Sing|Person=3	10	obl	_	_
+7	के	का	ADP	PSP	AdpType=Post	6	case	_	_
+8	मध्य	मध्य	ADP	NST	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing|Person=3	6	case	_	_
+9	में	में	ADP	PSP	AdpType=Post	6	case	_	_
+10	बोई	बो	VERB	VM	Aspect=Perf|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+11	जाती	जा	AUX	VAUX	Aspect=Imp|Gender=Fem|Number=Sing|VerbForm=Part	10	aux:pass	_	_
+12	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	_	_
+13	।	।	PUNCT	SYM	_	10	punct	_	_
+
+
+# sent_id = pred-26
+# text
+1	बुवाई	बुवाई	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	4	nmod	_	_
+2	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	1	case	_	_
+3	पश्‍चात	पश्‍चात	ADJ	JJ	Case=Acc	4	amod	_	_
+4	बीज	बीज	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	6	nsubj	_	_
+5	के	का	ADP	PSP	AdpType=Post|Case=Acc	4	case	_	_
+6	उगने	उग	VERB	VM	Case=Acc|Number=Sing|Person=3|VerbForm=Inf	15	obl	_	_
+7	के	का	ADP	PSP	AdpType=Post	6	mark	_	_
+8	बाद	बाद	ADV	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	6	mark	_	_
+9	जब	जब	PRON	PRP	Case=Nom|PronType=Prs	15	obl	_	_
+10	मूल	मूल	ADJ	JJ	Case=Nom	11	amod	_	_
+11	जड़	जड़	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	15	nsubj	_	_
+12	भूमि	भूमि	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	15	obl	_	_
+13	में	में	ADP	PSP	AdpType=Post	12	case	_	_
+14	प्रवेश	प्रवेश	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	15	compound	_	_
+15	करती	कर	VERB	VM	Aspect=Imp|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Act	17	acl:relcl	_	_
+16	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux	_	_
+17	तो	तो	PRON	PRP	PronType=Prs	31	obl	_	_
+18	पौधे	पौधा	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	20	nmod	_	_
+19	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	18	case	_	_
+20	वृद्धि	वृद्धि	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	31	obl	_	_
+21	के	का	ADP	PSP	AdpType=Post	20	case	_	_
+22	लिए	लिए	ADP	PSP	AdpType=Post	20	case	_	_
+23	वह	वह	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	31	nsubj	_	_
+24	भूमि	भूमि	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	29	obl	_	_
+25	से	से	ADP	PSP	AdpType=Post	24	case	_	_
+26	अपना	अपना	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	28	nmod	_	_
+27	खाद्‍य	खाद्य	ADJ	JJ	Case=Nom	28	amod	_	_
+28	पदार्थ	पदार्थ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	29	obj	_	_
+29	लेना	ले	VERB	VM	Case=Nom|VerbForm=Inf	31	obj	_	_
+30	शुरु	शुरु	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	31	compound	_	_
+31	करती	कर	VERB	VM	Aspect=Imp|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+32	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	aux	_	_
+33	।	।	PUNCT	SYM	_	31	punct	_	_
+
+
+# sent_id = pred-27
+# text
+1	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
+2	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	1	case	_	_
+3	पौधे	पौधा	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+4	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	3	case	_	_
+5	वृद्धि	वृद्धि	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	7	obl	_	_
+6	से	से	ADP	PSP	AdpType=Post	5	case	_	_
+7	लेकर	ले	VERB	VM	VerbForm=Conv	9	advcl	_	_
+8	फूल	फूल	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	9	obj	_	_
+9	आने	आ	VERB	VM	Case=Acc|Number=Sing|VerbForm=Inf	12	nmod	_	_
+10	तक	तक	ADP	PSP	AdpType=Post	9	mark	_	_
+11	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	9	mark	_	_
+12	अवस्था	अवस्था	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	27	obl	_	_
+13	में	में	ADP	PSP	AdpType=Post	12	case	_	_
+14	ताप	ताप	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	26	nmod	_	_
+15	,	COMMA	PUNCT	SYM	_	18	punct	_	_
+16	सूरज	सूरज	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	18	nmod	_	_
+17	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	16	case	_	_
+18	रोशनी	रोशनी	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	14	conj	_	_
+19	तथा	तथा	CCONJ	CC	_	22	cc	_	_
+20	पानी	पानी	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	22	nmod	_	_
+21	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	20	case	_	_
+22	उपलब्धि	उपलब्धि	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	14	conj	_	_
+23	आदि	आदि	PART	RP	_	22	dep	_	_
+24	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	22	case	_	_
+25	अधिक	अधिक	DET	QF	PronType=Ind	26	det	_	_
+26	प्रभाव	प्रभाव	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	27	nsubj	_	_
+27	पड़ता	पड	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+28	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	aux	_	_
+29	।	।	PUNCT	SYM	_	27	punct	_	_
+
+
+# sent_id = pred-28
+# text
+1	उदाहरण	उदाहरण	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	12	obl	_	_
+2	के	का	ADP	PSP	AdpType=Post	1	case	_	_
+3	लिए	लिए	ADP	PSP	AdpType=Post	1	case	_	_
+4	यदि	यदि	SCONJ	CC	_	12	mark	_	_
+5	दिन	दिन	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	12	nsubj	_	_
+6	व	व	CCONJ	CC	_	7	cc	_	_
+7	रात	रात	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	5	conj	_	_
+8	दोनों	दो	NUM	QC	Number=Plur|NumType=Card	9	nummod	_	_
+9	समय	समय	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	12	obl	_	_
+10	अधिक	अधिक	DET	QF	PronType=Ind	9	det	_	_
+11	तापमान	तापमान	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	12	nsubj	_	_
+12	हो	हो	VERB	VM	Voice=Act	19	advcl	_	_
+13	तो	तो	SCONJ	CC	_	19	mark	_	_
+14	फूल	फूल	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	15	compound	_	_
+15	अवस्था	अवस्था	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	19	nsubj	_	_
+16	देर	देर	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	19	obl	_	_
+17	से	से	ADP	PSP	AdpType=Post	16	case	_	_
+18	शुरु	शुरु	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	19	compound	_	_
+19	होती	हो	VERB	VM	Aspect=Imp|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+20	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	_	_
+21	।	।	PUNCT	SYM	_	19	punct	_	_
+
+
+# sent_id = pred-29
+# text
+1	चार	चार	PROPN	NNPC	Case=Nom|Number=Sing|Person=3	2	compound	_	_
+2	सप्‍ताह	सप्‍ताह	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+3	से	से	ADP	PSP	AdpType=Post	2	case	_	_
+4	छः	छः	PROPN	NNPC	NumType=Card	5	compound	_	_
+5	सप्‍ताह	सप्‍ताह	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	13	obl	_	_
+6	के	का	ADP	PSP	AdpType=Post	5	case	_	_
+7	बीच	बीच	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	5	case	_	_
+8	फूलों	फूल	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	13	obl	_	_
+9	में	में	ADP	PSP	AdpType=Post	8	case	_	_
+10	कलियाँ	कली	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur|Person=3	11	obj	_	_
+11	निकलना	निकल	VERB	VM	Case=Nom|VerbForm=Inf	13	obj	_	_
+12	शुरु	शुरु	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	13	compound	_	_
+13	हो	हो	VERB	VM	Gender=Fem|Number=Plur|Person=3|Voice=Act	0	root	_	_
+14	जातीं	जा	AUX	VAUX	Aspect=Imp|Gender=Fem|Number=Plur|VerbForm=Part	13	aux	_	_
+15	हैं	है	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	aux:pass	_	_
+16	तथा	तथा	CCONJ	CC	_	36	cc	_	_
+17	रोपण	रोपण	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	21	nmod	_	_
+18	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	17	case	_	_
+19	लगभग	लगभग	PART	RP	_	20	dep	_	_
+20	100	100	NUM	QC	NumType=Card	21	nummod	_	_
+21	दिन	दिन	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	36	obl	_	_
+22	के	का	ADP	PSP	AdpType=Post	21	case	_	_
+23	बाद	बाद	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	21	case	_	_
+24	पौधे	पौधा	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	36	obl	_	_
+25	पर	पर	ADP	PSP	AdpType=Post	24	case	_	_
+26	सफेद	सफेद	ADJ	JJ	Case=Acc	32	amod	_	_
+27	या	या	CCONJ	CC	_	28	cc	_	_
+28	हल्के	हल्का	ADJ	JJ	Case=Acc|Gender=Masc|Number=Sing	26	conj	_	_
+29	अथवा	अथवा	CCONJ	CC	_	31	cc	_	_
+30	गहरे	गहरा	ADJ	JJC	Case=Acc|Gender=Masc|Number=Sing	31	cc	_	_
+31	पीले	पीला	ADJ	JJ	Case=Nom|Gender=Masc|Number=Sing|Person=3	26	conj	_	_
+32	रंग	रंग	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	35	nmod	_	_
+33	के	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Plur	32	case	_	_
+34	अतिसंवेदनशील	अतिसंवेदनशील	ADJ	JJ	Case=Nom	35	amod	_	_
+35	फूल	फूल	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	36	nsubj	_	_
+36	खिल	खिल	VERB	VM	Gender=Masc|Number=Plur|Person=3|Voice=Act	13	conj	_	_
+37	जाते	जा	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Plur|VerbForm=Part	36	aux	_	_
+38	हैं	है	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	36	aux:pass	_	_
+39	।	।	PUNCT	SYM	_	13	punct	_	_
+
+
+# sent_id = pred-30
+# text
+1	बीजकोष	बीजकोष	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_
+2	बहुत	बहुत	ADV	INTF	AdvType=Deg	3	advmod	_	_
+3	जल्दी	जल्दी	ADV	RB	_	4	advmod	_	_
+4	बढ़ता	बढ	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+5	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+6	तथा	तथा	CCONJ	CC	_	18	cc	_	_
+7	पकने	पक	VERB	VM	Case=Acc|VerbForm=Inf	18	obl	_	_
+8	पर	पर	ADP	PSP	AdpType=Post	7	mark	_	_
+9	इसका	यह	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	nmod	_	_
+10	आकार	आकार	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	18	nsubj	_	_
+11	2.5	2.5	NUM	QC	NumType=Card	12	nummod	_	_
+12	सेंटीमीटर	सेंटीमीटर	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	13	obl	_	_
+13	चौड़ा	चौड़ा	ADJ	JJ	Gender=Masc|Number=Sing	18	xcomp	_	_
+14	तथा	तथा	CCONJ	CC	_	17	cc	_	_
+15	3.8	3.8	NUM	QC	NumType=Card	16	nummod	_	_
+16	सेंटीमीटर	सेंटीमीटर	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	17	obl	_	_
+17	लंबा	लंबा	ADJ	JJ	Case=Nom|Gender=Masc|Number=Sing	13	conj	_	_
+18	हो	हो	VERB	VM	Gender=Masc|Number=Sing|Person=3|Voice=Act	4	conj	_	_
+19	जाता	जा	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	18	aux	_	_
+20	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux:pass	_	_
+21	।	।	PUNCT	SYM	_	4	punct	_	_
+
+
+# sent_id = pred-31
+# text
+1	50	50	NUM	QC	Case=Acc|Number=Plur|NumType=Card	4	nmod	_	_
+2	से	से	ADP	PSP	AdpType=Post	1	case	_	_
+3	80	80	NUM	QC	NumType=Card	4	nummod	_	_
+4	दिन	दिन	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	7	nmod	_	_
+5	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	4	case	_	_
+6	पश्‍चात	पश्‍चात	ADJ	JJ	Case=Nom	7	amod	_	_
+7	बीजकोष	बीजकोष	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	8	nsubj	_	_
+8	फट	फट	VERB	VM	Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+9	जाता	जा	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	8	aux	_	_
+10	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	_	_
+11	तथा	तथा	CCONJ	CC	_	36	cc	_	_
+12	वर्ष	वर्ष	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	15	nmod	_	_
+13	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	12	case	_	_
+14	इस	यह	DET	DEM	Case=Acc|Number=Sing|Person=3|PronType=Dem	15	det	_	_
+15	समय	समय	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	26	obl	_	_
+16	में	में	ADP	PSP	AdpType=Post	15	case	_	_
+17	(	(	PUNCT	SYM	_	19	punct	_	_
+18	नवंबर	नवंबर	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	19	nmod	_	_
+19	माह	माह	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	15	nmod	_	_
+20	में	में	ADP	PSP	AdpType=Post	19	case	_	_
+21	)	)	PUNCT	SYM	_	19	punct	_	_
+22	जब	जब	PRON	PRP	Case=Nom|PronType=Prs	26	obl	_	_
+23	वह	वह	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	26	nsubj	_	_
+24	पूरी	पूरा	ADJ	JJ	Case=Nom|Gender=Fem|Number=Sing	25	amod	_	_
+25	तरह	तरह	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	26	obl	_	_
+26	खुल	खुल	VERB	VM	Gender=Masc|Number=Sing|Person=3|Voice=Act	29	acl:relcl	_	_
+27	जाता	जा	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	26	aux	_	_
+28	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	aux:pass	_	_
+29	तो	तो	PRON	PRP	PronType=Prs	36	obl	_	_
+30	हमें	हम	PRON	PRP	Case=Acc,Dat|Number=Plur|Person=1|PronType=Prs	36	nsubj	_	_
+31	यह	यह	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	33	det	_	_
+32	अद्‍भुत	अद्भुत	ADJ	JJ	Case=Nom	33	amod	_	_
+33	नजारा	नजारा	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	34	obj	_	_
+34	देखने	देख	VERB	VM	Case=Acc|VerbForm=Inf	36	advcl	_	_
+35	को	को	ADP	PSP	AdpType=Post	34	mark	_	_
+36	मिलता	मिल	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	8	conj	_	_
+37	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	aux	_	_
+38	।	।	PUNCT	SYM	_	8	punct	_	_
+
+
+# sent_id = pred-32
+# text
+1	कपास	कपास	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
+2	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Plur	1	case	_	_
+3	रेशों	रेश	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	5	nmod	_	_
+4	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	3	case	_	_
+5	टेंट	टेंट	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	21	obj	_	_
+6	को	को	ADP	PSP	AdpType=Post	5	case	_	_
+7	दिसंबर	दिसंबर	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	8	nmod	_	_
+8	माह	माह	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	21	obl	_	_
+9	में	में	ADP	PSP	AdpType=Post	8	case	_	_
+10	भारत	भारत	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	21	obl	_	_
+11	में	में	ADP	PSP	AdpType=Post	10	case	_	_
+12	प्रायः	प्रायः	ADV	RB	_	21	advmod	_	_
+13	हाथ	हाथ	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	15	nmod	_	_
+14	से	से	ADP	PSP	AdpType=Post	13	case	_	_
+15	NULL	NULL	ADV	RB	_	21	obl	_	_
+16	तथा	तथा	CCONJ	CC	_	19	cc	_	_
+17	विदेशों	विदेश	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	19	nmod	_	_
+18	में	में	ADP	PSP	AdpType=Post	17	case	_	_
+19	मशीन	मशीन	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	15	conj	_	_
+20	से	से	ADP	PSP	AdpType=Post	19	case	_	_
+21	तोड़ा	तो	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+22	जाता	जा	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	21	aux:pass	_	_
+23	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux:pass	_	_
+24	।	।	PUNCT	SYM	_	21	punct	_	_
+
+
+# sent_id = pred-33
+# text
+1	अध्यापक	अध्यापक	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_
+2	ने	ने	ADP	PSP	AdpType=Post	1	case	_	_
+3	बताया	बता	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	_
+4	कि	कि	SCONJ	CC	_	13	mark	_	_
+5	भारत	भारत	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	13	obl	_	_
+6	में	में	ADP	PSP	AdpType=Post	5	case	_	_
+7	रेशम	रेशम	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	9	compound	_	_
+8	कीट	कीट	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	9	compound	_	_
+9	पालन	पालन	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	13	nsubj	_	_
+10	सन् 400	सन् 400	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	13	obl	_	_
+11	में	में	ADP	PSP	AdpType=Post	10	case	_	_
+12	शुरु	शुरु	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	13	compound	_	_
+13	हुआ	हो	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	3	obj	_	_
+14	था	था	AUX	VAUX	Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	13	aux	_	_
+15	।	।	PUNCT	SYM	_	3	punct	_	_
+
+
+# sent_id = pred-34
+# text
+1	अब	अब	PRON	PRP	Case=Nom|PronType=Prs	13	nmod	_	_
+2	विश्‍व	विश्व	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	6	obl	_	_
+3	में	में	ADP	PSP	AdpType=Post	2	case	_	_
+4	रेशम	रेशम	NOUN	NNC	Case=Nom|Gender=Fem|Number=Sing|Person=3	5	compound	_	_
+5	उत्पादन	उत्पादन	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	compound	_	_
+6	करने	कर	VERB	VM	Case=Acc|Number=Plur|VerbForm=Inf	8	amod	_	_
+7	वाले	वाला	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Plur	6	mark	_	_
+8	देशों	देश	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	13	nmod	_	_
+9	में	में	ADP	PSP	AdpType=Post	8	case	_	_
+10	भारत	भारत	PROPN	NNP	Case=Acc|Gender=Masc|Number=Sing|Person=3	13	nmod	_	_
+11	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	10	case	_	_
+12	प्रमुख	प्रमुख	ADJ	JJ	Case=Nom	13	amod	_	_
+13	स्थान	स्थान	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+14	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
+15	।	।	PUNCT	SYM	_	13	punct	_	_
+
+
+# sent_id = pred-35
+# text
+1	यह	यह	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+2	एक	एक	NUM	QC	NumType=Card	4	nummod	_	_
+3	लघु	लघु	ADJ	JJ	Case=Nom	4	amod	_	_
+4	उद्योग	उद्योग	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+5	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+6	जिसमें	जो	PRON	PRP	Case=Acc,Ine|Number=Sing|Person=3|PronType=Prs	18	obl	_	_
+7	50,000	50000	NUM	QC	NumType=Card	8	nummod	_	_
+8	गाँव	गाँव	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	18	nsubj	_	_
+9	रेशम	रेशम	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	compound	_	_
+10	कीट	कीट	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	11	compound	_	_
+11	पालन	पालन	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	16	nmod	_	_
+12	(	(	PUNCT	SYM	_	13	punct	_	_
+13	sericulture	sericulture	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	11	nmod	_	_
+14	)	)	PUNCT	SYM	_	13	punct	_	_
+15	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	11	dislocated	_	_
+16	कार्य	कार्य	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	18	obl	_	_
+17	में	में	ADP	PSP	AdpType=Post	16	case	_	_
+18	जुटे	जुट	VERB	VM	Aspect=Perf|Gender=Masc|Number=Plur|Person=3|VerbForm=Part|Voice=Act	4	acl:relcl	_	_
+19	हुए	हो	AUX	VAUX	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part	18	aux	_	_
+20	हैं	है	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	aux:pass	_	_
+21	।	।	PUNCT	SYM	_	4	punct	_	_
+
+
+# sent_id = pred-36
+# text
+1	भारत	भारत	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	5	nsubj	_	_
+2	ही	ही	PART	RP	_	1	dep	_	_
+3	एक	एक	NUM	QC	NumType=Card	5	nummod	_	_
+4	ऐसा	ऐसा	DET	DEM	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	det	_	_
+5	देश	देश	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+6	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+7	जहाँ	जहाँ	PRON	PRP	Case=Nom|PronType=Prs	22	obl	_	_
+8	कई	कई	DET	QF	PronType=Ind	9	det	_	_
+9	प्रकार	प्रकार	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	11	nmod	_	_
+10	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	9	case	_	_
+11	रेशम	रेशम	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	13	nmod	_	_
+12	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Plur	11	case	_	_
+13	कीड़ों	कीट	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	15	nmod	_	_
+14	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	13	case	_	_
+15	पालन	पालन	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	16	compound	_	_
+16	करके	कर	VERB	VM	VerbForm=Conv	22	advcl	_	_
+17	विविध	विविध	ADJ	JJ	Case=Acc	18	amod	_	_
+18	प्रकार	प्रकार	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	20	nmod	_	_
+19	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	18	case	_	_
+20	रेशम	रेशम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	22	obj	_	_
+21	प्राप्‍त	प्राप्त	ADJ	JJ	_	22	compound	_	_
+22	किया	कर	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	5	acl:relcl	_	_
+23	जाता	जा	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	22	aux:pass	_	_
+24	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux:pass	_	_
+25	।	।	PUNCT	SYM	_	5	punct	_	_
+
+
+# sent_id = pred-37
+# text
+1	स्वर्ण	स्वर्ण	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	compound	_	_
+2	रंग	रंग	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+3	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	2	case	_	_
+4	मूंगा	मूंगा	ADJ	JJ	Case=Nom|Gender=Masc|Number=Sing|Person=3	5	amod	_	_
+5	रेशम	रेशम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	12	obj	_	_
+6	केवल	केवल	PART	RP	_	7	dep	_	_
+7	हमारे	हम	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	8	nmod	_	_
+8	देश	देश	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	12	obl	_	_
+9	में	में	ADP	PSP	AdpType=Post	8	case	_	_
+10	ही	ही	PART	RP	_	8	dep	_	_
+11	पैदा	पैदा	ADJ	JJ	_	12	compound	_	_
+12	किया	कर	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Pass	0	root	_	_
+13	जाता	जा	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	12	aux:pass	_	_
+14	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	_	_
+15	।	।	PUNCT	SYM	_	12	punct	_	_
+
+
+# sent_id = pred-38
+# text
+1	कृषि	कृषि	NOUN	NNC	Case=Nom|Gender=Fem|Number=Sing|Person=3	2	compound	_	_
+2	व्यवसाय	व्यवसाय	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	13	nmod	_	_
+3	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem	2	case	_	_
+4	तरह	तरह	ADP	PSP	Case=Acc|Gender=Fem	2	case	_	_
+5	रेशम	रेशम	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	compound	_	_
+6	कीट	कीट	PROPN	NNPC	Case=Nom|Gender=Fem|Number=Sing|Person=3	7	compound	_	_
+7	पालन	पालन	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	13	nsubj	_	_
+8	भी	भी	PART	RP	_	7	dep	_	_
+9	जीविकोपार्जन	जीविकोपार्जन	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	13	nmod	_	_
+10	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	9	case	_	_
+11	एक	एक	NUM	QC	NumType=Card	13	nummod	_	_
+12	मुख्य	मुख्य	ADJ	JJ	Case=Nom	13	amod	_	_
+13	साधन	साधन	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	0	root	_	_
+14	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
+15	जिसमें	जो	PRON	PRP	Case=Acc,Ine|Number=Sing|Person=3|PronType=Prs	26	obl	_	_
+16	कई	कई	DET	QF	PronType=Ind	17	dep	_	_
+17	हजार	हजार	NUM	QC	NumType=Card	18	nummod	_	_
+18	श्रमिक	श्रमिक	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	26	nsubj	_	_
+19	काम	काम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	20	obj	_	_
+20	करते	कर	VERB	VM	Aspect=Imp|Gender=Masc|Number=Plur|VerbForm=Part	26	advcl	_	_
+21	हुए	हो	AUX	VAUX	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part	20	aux	_	_
+22	यह	यह	DET	DEM	Case=Nom|Number=Sing|Person=3|PronType=Dem	24	det	_	_
+23	बहुमूल्य	बहुमूल्य	ADJ	JJ	Case=Nom	24	amod	_	_
+24	रेशा	रेशा	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	26	obj	_	_
+25	पैदा	पैदा	ADJ	JJ	_	26	compound	_	_
+26	करते	कर	VERB	VM	Aspect=Imp|Gender=Masc|Number=Plur|Person=3|VerbForm=Part|Voice=Act	7	acl:relcl	_	_
+27	हैं	है	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	aux	_	_
+28	।	।	PUNCT	SYM	_	13	punct	_	_
+
+
+# sent_id = pred-39
+# text
+1	रेशम	रेशम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	obj	_	_
+2	कई	कई	DET	QF	PronType=Ind	3	det	_	_
+3	प्रकार	प्रकार	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+4	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Plur	3	case	_	_
+5	कीड़ों	कीट	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	7	nsubj:pass	_	_
+6	द्वारा	द्वारा	ADP	PSP	AdpType=Post	5	case	_	_
+7	बनाया	बना	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+8	जाता	जा	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	7	aux:pass	_	_
+9	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	_
+10	परंतु	परंतु	CCONJ	CC	_	25	cc	_	_
+11	इन	यह	DET	DEM	Case=Acc|Number=Plur|Person=3|PronType=Dem	12	det	_	_
+12	सब	सब	PRON	PRP	Case=Acc|Number=Plur|PronType=Prs	25	nmod	_	_
+13	में	में	ADP	PSP	AdpType=Post	12	case	_	_
+14	बांबिक्स	बांबिक्स	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	15	compound	_	_
+15	मोरी	मोरी	PROPN	NNP	Case=Nom|Gender=Fem|Number=Sing|Person=3	20	nmod	_	_
+16	(	(	PUNCT	SYM	_	18	punct	_	_
+17	Bombyx	Bombyx	PROPN	NNPC	Case=Nom|Gender=Masc|Number=Sing|Person=3	18	compound	_	_
+18	Mori	Mori	PROPN	NNP	Case=Nom|Gender=Fem|Number=Sing|Person=3	15	nmod	_	_
+19	)	)	PUNCT	SYM	_	18	punct	_	_
+20	जाति	जाति	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	23	nmod	_	_
+21	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	20	case	_	_
+22	रेशम	रेशम	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	23	compound	_	_
+23	कीड़ा	कीड़ा	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	25	nsubj	_	_
+24	ही	ही	PART	RP	_	23	dep	_	_
+25	प्रमुख	प्रमुख	ADJ	JJ	_	7	conj	_	_
+26	है	है	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	25	cop	_	_
+27	और	और	CCONJ	CC	_	35	cc	_	_
+28	सेरीकल्चर	सेरीकल्चर	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	29	compound	_	_
+29	फार्म	फार्म	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	32	nmod	_	_
+30	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	29	case	_	_
+31	विशेष	विशेष	ADJ	JJ	Case=Acc	32	amod	_	_
+32	वातारण	वातारण	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	35	obl	_	_
+33	में	में	ADP	PSP	AdpType=Post	32	case	_	_
+34	रेशम	रेशम	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	35	obj	_	_
+35	बनाता	बना	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	25	conj	_	_
+36	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	aux	_	_
+37	।	।	PUNCT	SYM	_	7	punct	_	_
+
+
+# sent_id = pred-40
+# text
+1	इस	यह	DET	DEM	Case=Acc|Number=Sing|Person=3|PronType=Dem	2	det	_	_
+2	कीड़े	कीपा	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	4	nmod	_	_
+3	के	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Plur	2	case	_	_
+4	लारवा	लारवा	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	11	nsubj	_	_
+5	(	(	PUNCT	SYM	_	6	punct	_	_
+6	larva	larva	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	4	nmod	_	_
+7	)	)	PUNCT	SYM	_	6	punct	_	_
+8	शहतूत	शहतूत	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	10	nmod	_	_
+9	के	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Plur	8	case	_	_
+10	पत्‍ते	पत्ता	ADJ	JJ	Case=Nom|Gender=Masc|Number=Plur|Person=3	11	obj	_	_
+11	खाते	खा	VERB	VM	Aspect=Imp|Gender=Masc|Number=Plur|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+12	हैं	है	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+13	।	।	PUNCT	SYM	_	11	punct	_	_
+
+
+# sent_id = pred-41
+# text
+1	रेशम	रेशम	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
+2	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	1	case	_	_
+3	कीड़ा	कीड़ा	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	9	nsubj	_	_
+4	देखने	देख	VERB	VM	Case=Acc|VerbForm=Inf	9	obl	_	_
+5	में	में	ADP	PSP	AdpType=Post	4	mark	_	_
+6	तितली	तितली	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	9	obl	_	_
+7	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem	6	case	_	_
+8	तरह	तरह	ADP	PSP	Case=Acc|Gender=Fem	6	case	_	_
+9	होता	हो	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+10	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
+11	जिसके	जो	PRON	PRP	Case=Acc,Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	nmod	_	_
+12	अंडों	अंडा	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	19	obl	_	_
+13	से	से	ADP	PSP	AdpType=Post	12	case	_	_
+14	पहले	पहले	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	12	case	_	_
+15	लारवा	लारवा	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	19	nsubj	_	_
+16	(	(	PUNCT	SYM	_	17	punct	_	_
+17	कैटरपिलर	कैटरपिलर	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	15	nmod	_	_
+18	)	)	PUNCT	SYM	_	17	punct	_	_
+19	बनता	बन	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	3	acl:relcl	_	_
+20	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	_	_
+21	।	।	PUNCT	SYM	_	9	punct	_	_
+
+
+# sent_id = pred-42
+# text
+1	फिर	फिर	ADV	RB	_	25	advmod	_	_
+2	कैटरपिलर	कैटरपिलर	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	9	nsubj	_	_
+3	प्यूपा	प्यूपा	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	9	obj	_	_
+4	(	(	PUNCT	SYM	_	5	punct	_	_
+5	pupa	pupa	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	nmod	_	_
+6	)	)	PUNCT	SYM	_	5	punct	_	_
+7	अथवा	अथवा	CCONJ	CC	_	8	cc	_	_
+8	क्राइसेलिस	क्राइसेलिस	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	conj	_	_
+9	बनने	बन	VERB	VM	Case=Acc|Number=Sing|VerbForm=Inf	11	nmod	_	_
+10	की	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Fem|Number=Sing	9	mark	_	_
+11	प्रक्रिया	प्रक्रिया	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	25	obl	_	_
+12	में	में	ADP	PSP	AdpType=Post	11	case	_	_
+13	अपनी	अपना	PRON	PRP	Case=Acc|Gender=Fem|PronType=Prs	14	nmod	_	_
+14	सुरक्षा	सुरक्षा	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	25	obl	_	_
+15	के	का	ADP	PSP	AdpType=Post	14	case	_	_
+16	लिए	लिए	ADP	PSP	AdpType=Post	14	case	_	_
+17	चारों	चार	NUM	QC	Number=Plur|NumType=Card	18	nummod	_	_
+18	तरफ	तरफ	NOUN	NN	AdpType=Post|Case=Nom|Gender=Fem|Number=Sing|Person=3	25	obl	_	_
+19	रेशम	रेशम	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	25	obl	_	_
+20	से	से	ADP	PSP	AdpType=Post	19	case	_	_
+21	घर	घर	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	25	obj	_	_
+22	(	(	PUNCT	SYM	_	23	punct	_	_
+23	कठोरी	कठोरी	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	21	nmod	_	_
+24	)	)	PUNCT	SYM	_	23	punct	_	_
+25	बनाता	बना	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+26	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	aux	_	_
+27	जिसे	जो	PRON	PRP	Case=Acc,Dat|Number=Sing|Person=3|PronType=Prs	34	obj	_	_
+28	कोया	कोया	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	34	acl	_	_
+29	अथवा	अथवा	CCONJ	CC	_	30	cc	_	_
+30	कोकून	कोकून	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	28	conj	_	_
+31	(	(	PUNCT	SYM	_	32	punct	_	_
+32	cocoon	cocoon	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	30	nmod	_	_
+33	)	)	PUNCT	SYM	_	32	punct	_	_
+34	कहते	कह	VERB	VM	Aspect=Imp|Gender=Masc|Number=Plur|Person=3|VerbForm=Part|Voice=Act	21	acl:relcl	_	_
+35	हैं	है	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	34	aux	_	_
+36	।	।	PUNCT	SYM	_	25	punct	_	_
+
+
+# sent_id = pred-43
+# text
+1	क्राइसेलिस	क्राइसेलिस	PROPN	NNP	Case=Nom|Gender=Masc|Number=Sing|Person=3	17	nsubj	_	_
+2	पूरा	पूरा	ADJ	JJ	Case=Nom|Gender=Masc|Number=Sing	4	compound	_	_
+3	विकसित	विकसित	ADJ	JJ	_	4	compound	_	_
+4	होने	हो	VERB	VM	Case=Acc|Number=Sing|VerbForm=Inf	6	nmod	_	_
+5	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	4	mark	_	_
+6	पश्‍चात	पश्चात	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	7	nmod	_	_
+7	मॉथ	मॉथ	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	17	obl	_	_
+8	(	(	PUNCT	SYM	_	9	punct	_	_
+9	moth	moth	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	7	nmod	_	_
+10	)	)	PUNCT	SYM	_	9	punct	_	_
+11	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc	7	dislocated	_	_
+12	रूप	रूप	ADP	PSP	Case=Acc|Gender=Masc	7	dislocated	_	_
+13	में	में	ADP	PSP	AdpType=Post	7	dislocated	_	_
+14	कोये	कोया	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	17	obl	_	_
+15	से	से	ADP	PSP	AdpType=Post	14	case	_	_
+16	बाहर	बाहर	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	14	case	_	_
+17	निकलता	निकल	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+18	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
+19	तथा	तथा	CCONJ	CC	_	28	cc	_	_
+20	फिर	फिर	ADV	RB	_	28	advmod	_	_
+21	मादा	मादा	ADJ	JJ	Case=Nom	22	amod	_	_
+22	मॉथ	मॉथ	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	28	iobj	_	_
+23	(	(	PUNCT	SYM	_	25	punct	_	_
+24	रेशम	रेशम	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	25	compound	_	_
+25	कीट	कीट	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	22	nmod	_	_
+26	)	)	PUNCT	SYM	_	25	punct	_	_
+27	अंडे	अंडा	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	28	obj	_	_
+28	देती	दे	VERB	VM	Aspect=Imp|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Act	17	conj	_	_
+29	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	aux	_	_
+30	।	।	PUNCT	SYM	_	17	punct	_	_
+
+
+# sent_id = pred-44
+# text
+1	इस	यह	DET	DEM	Case=Acc|Number=Sing|Person=3|PronType=Dem	2	det	_	_
+2	प्रकार	प्रकार	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	10	obl	_	_
+3	रेशम	रेशम	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	5	nmod	_	_
+4	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Sing	3	case	_	_
+5	कीड़े	कीपा	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	8	nmod	_	_
+6	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	5	case	_	_
+7	जीवन	जीवन	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	8	compound	_	_
+8	चक्र	चक्र	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	10	nsubj	_	_
+9	पूरा	पूरा	ADJ	JJ	Gender=Masc|Number=Sing	10	compound	_	_
+10	हो	हो	VERB	VM	Gender=Masc|Number=Sing|Person=3|Voice=Act	0	root	_	_
+11	जाता	जा	AUX	VAUX	Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part	10	aux	_	_
+12	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	_	_
+13	।	।	PUNCT	SYM	_	10	punct	_	_
+
+
+# sent_id = pred-45
+# text
+1	उन्होंने	वह	PRON	PRP	Case=Acc,Erg|Number=Sing|Person=3|Polite=Form|PronType=Prs	2	nsubj	_	_
+2	बताया	बता	VERB	VM	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Act	0	root	_	_
+3	कि	कि	SCONJ	CC	_	14	mark	_	_
+4	हम	हम	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	14	nsubj	_	_
+5	बांबिक्स	बांबिक्स	NOUN	NNC	Case=Acc	7	amod	_	_
+6	मोरी	मोरी	NOUN	NNC	Case=Nom|Gender=Fem|Number=Sing|Person=3	7	compound	_	_
+7	जाति	जाति	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	11	nmod	_	_
+8	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc|Number=Plur	7	case	_	_
+9	ही	ही	PART	RP	_	7	dep	_	_
+10	रेशम	रेशम	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	compound	_	_
+11	कीड़ों	कीट	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	13	nmod	_	_
+12	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	11	case	_	_
+13	पालन	पालन	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	14	compound	_	_
+14	करते	कर	VERB	VM	Aspect=Imp|Gender=Masc|Number=Plur|Person=3|VerbForm=Part|Voice=Act	2	obj	_	_
+15	हैं	है	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux	_	_
+16	।	।	PUNCT	SYM	_	2	punct	_	_
+
+
+# sent_id = pred-46
+# text
+1	इन	यह	DET	DEM	Case=Acc|Number=Plur|Person=3|PronType=Dem	2	det	_	_
+2	कीड़ों	कीट	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur|Person=3	5	nmod	_	_
+3	की	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Fem|Number=Sing	2	case	_	_
+4	मादा	मादा	ADJ	JJ	Case=Nom	5	amod	_	_
+5	मॉथ	मॉथ	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	19	nsubj	_	_
+6	(	(	PUNCT	SYM	_	7	punct	_	_
+7	moth	moth	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+8	)	)	PUNCT	SYM	_	7	punct	_	_
+9	कोये	कोया	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	11	obl	_	_
+10	से	से	ADP	PSP	AdpType=Post	9	case	_	_
+11	निकलने	निकल	VERB	VM	Case=Acc|Number=Plur|VerbForm=Inf	14	nmod	_	_
+12	के	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Plur	11	mark	_	_
+13	तीन	तीन	NUM	QC	NumType=Card	14	nummod	_	_
+14	दिन	दिन	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	19	obl	_	_
+15	बाद	बाद	ADP	NST	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing|Person=3	14	case	_	_
+16	करीब	करीब	PART	RP	_	17	dep	_	_
+17	700	700	NUM	QC	NumType=Card	18	nummod	_	_
+18	अंडे	अंडा	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	19	obj	_	_
+19	देती	दे	VERB	VM	Aspect=Imp|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+20	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	_	_
+21	और	और	CCONJ	CC	_	23	cc	_	_
+22	फिर	फिर	ADV	RB	_	23	advmod	_	_
+23	मर	मर	VERB	VM	Gender=Fem|Number=Sing|Person=3|Voice=Act	19	conj	_	_
+24	जाती	जा	AUX	VAUX	Aspect=Imp|Gender=Fem|Number=Sing|VerbForm=Part	23	aux	_	_
+25	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	aux:pass	_	_
+26	।	।	PUNCT	SYM	_	19	punct	_	_
+
+
+# sent_id = pred-47
+# text
+1	वैसे	वैसे	PRON	PRP	PronType=Prs	11	obl	_	_
+2	अन्य	अन्य	ADJ	JJ	Case=Acc	3	amod	_	_
+3	जाति	जाति	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing|Person=3	6	nmod	_	_
+4	के	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Plur	3	case	_	_
+5	रेशम	रेशम	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	6	compound	_	_
+6	कीट	कीट	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	11	nsubj	_	_
+7	350	350	NUM	QC	NumType=Card	9	nummod	_	_
+8	-	-	PUNCT	SYM	_	7	punct	_	_
+9	400	400	NUM	QC	NumType=Card	10	nummod	_	_
+10	अंडे	अंडा	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	11	obj	_	_
+11	देते	दे	VERB	VM	Aspect=Imp|Gender=Masc|Number=Plur|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+12	हैं	है	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+13	।	।	PUNCT	SYM	_	11	punct	_	_
+
+
+# sent_id = pred-48
+# text
+1	प्रत्येक	प्रत्येक	DET	QF	PronType=Ind	2	det	_	_
+2	अंडे	अंडा	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	4	nmod	_	_
+3	का	का	ADP	PSP	AdpType=Post|Case=Nom|Gender=Masc|Number=Sing	2	case	_	_
+4	आकार	आकार	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	14	nsubj	_	_
+5	एक	एक	NUM	QC	NumType=Card	7	nummod	_	_
+6	पिन	पिन	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	compound	_	_
+7	हैड	हैड	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	14	obl	_	_
+8	(	(	PUNCT	SYM	_	10	punct	_	_
+9	pin	pin	NOUN	NNC	Case=Nom|Gender=Masc|Number=Sing|Person=3	10	compound	_	_
+10	head	head	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	7	nmod	_	_
+11	)	)	PUNCT	SYM	_	10	punct	_	_
+12	के	का	ADP	PSP	AdpType=Post	7	dislocated	_	_
+13	बराबर	बराबर	ADP	PSP	AdpType=Post	12	dislocated	_	_
+14	होता	हो	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+15	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	_	_
+16	,	COMMA	PUNCT	SYM	_	14	punct	_	_
+17	जिसमें	जो	PRON	PRP	Case=Acc,Ine|Number=Sing|Person=3|PronType=Prs	22	obl	_	_
+18	एक	एक	NUM	QC	NumType=Card	21	nummod	_	_
+19	नरम	नरम	ADJ	JJ	Case=Nom	21	amod	_	_
+20	सा	सा	PART	RP	Case=Nom|Gender=Masc|Number=Sing	19	dep	_	_
+21	बिंदु	बिंदु	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing|Person=3	22	nsubj	_	_
+22	होता	हो	VERB	VM	Aspect=Imp|Gender=Masc|Number=Sing|Person=3|VerbForm=Part|Voice=Act	7	acl:relcl	_	_
+23	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux	_	_
+24	।	।	PUNCT	SYM	_	14	punct	_	_
+
+
+# sent_id = pred-49
+# text
+1	इस	यह	DET	DEM	Case=Acc|Number=Sing|Person=3|PronType=Dem	3	det	_	_
+2	नरम	नरम	ADJ	JJ	Case=Acc	3	amod	_	_
+3	बिंदु	बिंदु	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	12	obl	_	_
+4	के	का	ADP	PSP	AdpType=Post|Case=Acc|Gender=Masc	3	case	_	_
+5	कारण	कारण	ADP	PSP	Case=Acc|Gender=Masc	3	case	_	_
+6	ही	ही	PART	RP	_	3	dep	_	_
+7	कोकून	कोकून	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing|Person=3	12	nsubj	_	_
+8	को	को	ADP	PSP	AdpType=Post	7	case	_	_
+9	फूटने	फूट	VERB	VM	Case=Acc|VerbForm=Inf	12	obl	_	_
+10	में	में	ADP	PSP	AdpType=Post	9	mark	_	_
+11	आसानी	आसानी	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing|Person=3	12	compound	_	_
+12	होती	हो	VERB	VM	Aspect=Imp|Gender=Fem|Number=Sing|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+13	है	है	AUX	VAUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
+14	।	।	PUNCT	SYM	_	12	punct	_	_
+
+
+# sent_id = pred-50
+# text
+1	ये	यह	DET	DEM	Case=Nom|Number=Plur|Person=3|PronType=Dem	2	det	_	_
+2	अंडे	अंडा	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur|Person=3	6	nsubj	_	_
+3	बहुत	बहुत	ADV	INTF	AdvType=Deg	5	advmod	_	_
+4	ही	ही	PART	RP	_	3	dep	_	_
+5	हल्के	हल्का	ADJ	JJ	Gender=Masc|Number=Plur	6	xcomp	_	_
+6	होते	हो	VERB	VM	Aspect=Imp|Gender=Masc|Number=Plur|Person=3|VerbForm=Part|Voice=Act	0	root	_	_
+7	हैं	है	AUX	VAUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
+8	।	।	PUNCT	SYM	_	6	punct	_	_
+
+
