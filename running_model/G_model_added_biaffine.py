@@ -71,14 +71,14 @@ def clean_and_parse_alignment(path, output_path, max_pairs=5000):
     if current_id is not None and not skip_this_block:
         valid_blocks[current_id] = temp_lines
 
-    print(f"Before cleaning: {len(valid_blocks)} valid blocks")
+    # print(f"Before cleaning: {len(valid_blocks)} valid blocks")
 
     # =====================
     # RENUMBER 1..N
     # =====================
     new_alignments = {}
     sorted_block_ids = sorted(valid_blocks.keys())
-    print("Smallest pair:", sorted_block_ids[0], "Largest:", sorted_block_ids[-1])
+    # print("Smallest pair:", sorted_block_ids[0], "Largest:", sorted_block_ids[-1])
 
     # We stop renumbering at max_pairs (e.g., 5000)
     kept_ids = sorted_block_ids[:max_pairs]
@@ -101,7 +101,7 @@ def clean_and_parse_alignment(path, output_path, max_pairs=5000):
 
 
 def parse_alignment_file(path):
-    print("======= Parsing Alignment File =======")
+    # print("======= Parsing Alignment File =======")
     alignments = {}
     sent_id = None
 
@@ -128,7 +128,7 @@ def parse_alignment_file(path):
 
 
 def load_hindi_conllu(path, limit=5000):
-    print("======= Loading Hindi Conllu =======")
+    # print("======= Loading Hindi Conllu =======")
 
     hindi = {}
     sent_id = None
@@ -167,7 +167,7 @@ def load_hindi_conllu(path, limit=5000):
 
 
 def load_bhojpuri_synth(path, limit=5000):
-    print("======= Loading Bhojpuri Synthetic Conllu =======")
+    # print("======= Loading Bhojpuri Synthetic Conllu =======")
 
     bhoj = {}
     sent_id = None
@@ -258,8 +258,8 @@ print("✓ Encoder loaded")
 print("✓ Tokenizer loaded")
 
 
-print("Model loaded:", type(encoder))
-print("Tokenizer loaded:", type(tokenizer))
+# print("Model loaded:", type(encoder))
+# print("Tokenizer loaded:", type(tokenizer))
 
 
 
@@ -297,14 +297,14 @@ print("  Bhojpuri Synth:", BHOJPURI_SYNTH_PATH)
 
 CLEAN_ALIGN = os.path.join(BASE_DIR, "input", "alignment.cleaned")
 alignments = clean_and_parse_alignment(ALIGNMENT_PATH, CLEAN_ALIGN, max_pairs=5000)
-print("\nAlignment Example:", list(alignments.items())[-1])
+# print("\nAlignment Example:", list(alignments.items())[-1])
 
 # Step 2 — Load Hindi & Bhojpuri (first 5000 only)
 hindi_data = load_hindi_conllu(HINDI_CONLLU_PATH, limit=5000)
-print("\nHindi Example:", list(hindi_data.items())[-1])
+# print("\nHindi Example:", list(hindi_data.items())[-1])
 
 bhojpuri_data = load_bhojpuri_synth(BHOJPURI_SYNTH_PATH, limit=5000)
-print("\nBhojpuri Example:", list(bhojpuri_data.items())[-1])
+# print("\nBhojpuri Example:", list(bhojpuri_data.items())[-1])
 
 
 # DEBUG
@@ -352,12 +352,12 @@ def aggregate_subwords_to_words(tokens, tokenizer, hb_subword):
 
 
 def encode_Hb(tokens):
-    print("\n[Hb] Encoding sentence:")
-    print(" ", tokens[:20], "..." if len(tokens) > 20 else "")
+    # print("\n[Hb] Encoding sentence:")
+    # print(" ", tokens[:20], "..." if len(tokens) > 20 else "")
 
     # Word-aware tokenization
     encoded = tokenizer(tokens, is_split_into_words=True, return_tensors="pt")
-    print("[Hb] Subword IDs:", encoded["input_ids"].shape)
+    # print("[Hb] Subword IDs:", encoded["input_ids"].shape)
 
     with torch.no_grad():
         out = encoder(**encoded)
@@ -367,7 +367,7 @@ def encode_Hb(tokens):
     # Aggregate to word-level
     Hb_word = aggregate_subwords_to_words(tokens, tokenizer, hb_sub)
 
-    print("[Hb] Word-level Hb shape:", Hb_word.shape)
+    # print("[Hb] Word-level Hb shape:", Hb_word.shape)
     return Hb_word
 
 
@@ -413,9 +413,9 @@ class BiaffineParser(nn.Module):
         Lh = self.lbl_head(Hb)   # (N, lbl_hidden)
         Ld = self.lbl_dep(Hb)    # (N, lbl_hidden)
 
-        print("\n[Biaffine] Forward:")
-        print("  Hb:", Hb.shape)
-        print("  Hh:", Hh.shape, " Hd:", Hd.shape)
+        # print("\n[Biaffine] Forward:")
+        # print("  Hb:", Hb.shape)
+        # print("  Hh:", Hh.shape, " Hd:", Hd.shape)
 
         # Compute all (dependent, head) arc scores
         arc_scores = torch.zeros((N, N))
@@ -423,7 +423,7 @@ class BiaffineParser(nn.Module):
             for h in range(N):
                 arc_scores[d, h] = self.arc_biaffine(Hd[d], Hh[h])
 
-        print("  Arc scores:", arc_scores.shape)
+        # print("  Arc scores:", arc_scores.shape)
 
         # Compute label scores: (N,N,num_labels)
         lbl_scores = torch.zeros((N, N, self.lbl_biaffine.out_features))
@@ -431,14 +431,14 @@ class BiaffineParser(nn.Module):
             for h in range(N):
                 lbl_scores[d, h, :] = self.lbl_biaffine(Ld[d], Lh[h])
 
-        print("  Label scores:", lbl_scores.shape)
+        # print("  Label scores:", lbl_scores.shape)
 
         return arc_scores, lbl_scores
 
 
 
 def alignment_loss(arc_scores, lbl_scores, Th, aligns, label_vocab):
-    print("\n[Loss] Computing alignment loss...")
+    # print("\n[Loss] Computing alignment loss...")
 
     loss_arc = 0.0
     loss_lbl = 0.0
@@ -498,7 +498,7 @@ def alignment_loss(arc_scores, lbl_scores, Th, aligns, label_vocab):
 import torch.nn.functional as F
 
 def supervised_loss(arc_scores, lbl_scores, heads, labels, label_vocab):
-    print("\n[Loss] Computing supervised loss...")
+    # print("\n[Loss] Computing supervised loss...")
 
     N = len(heads)
 
@@ -518,7 +518,7 @@ def supervised_loss(arc_scores, lbl_scores, heads, labels, label_vocab):
     # ARC LOSS
     # ---------------------------
     loss_arc = F.cross_entropy(arc_scores, heads_tensor)
-    print("  Arc CE:", float(loss_arc))
+    # print("  Arc CE:", float(loss_arc))
 
     # ---------------------------
     # LABEL LOSS (use gold head per token)
@@ -547,7 +547,7 @@ def supervised_loss(arc_scores, lbl_scores, heads, labels, label_vocab):
     gold_lbl_ids = torch.tensor(gold_lbl_ids)
 
     loss_lbl = F.cross_entropy(label_preds, gold_lbl_ids)
-    print("  Label CE:", float(loss_lbl))
+    # print("  Label CE:", float(loss_lbl))
 
     return loss_arc + loss_lbl
 
@@ -614,20 +614,21 @@ for epoch in range(1, NUM_EPOCHS + 1):
     random.shuffle(bhojpuri_sentence_ids)
     epoch_loss = 0.0
 
-    # ------------------------------------
-    # TRAINING LOOP WITH PERCENTAGE
-    # ------------------------------------
     for idx, sid in enumerate(bhojpuri_sentence_ids, start=1):
 
-        progress = (idx / TOTAL_STEPS) * 100
-        print(f"\n[Epoch {epoch}] Progress: {progress:5.1f}%  ({idx}/{TOTAL_STEPS})")
+        # ----------------------------
+        # Progress bar (kept)
+        # ----------------------------
+        if idx % 20 == 0 or idx == 1:
+            progress = (idx / TOTAL_STEPS) * 100
+            print(f"[Epoch {epoch}] Progress: {progress:5.1f}%  ({idx}/{TOTAL_STEPS})")
 
-        print(f"================ TRAINING SENTENCE {sid} ================")
-
+        # ----------------------------
+        # Encode → Forward → Loss
+        # ----------------------------
         Hb = encode_Hb(bhojpuri_data[sid]["tokens"])
         arc_s, lbl_s = parser(Hb)
 
-        print("\n[Training] Computing L_syn")
         L_syn = supervised_loss(
             arc_s, lbl_s,
             bhojpuri_data[sid]["heads"],
@@ -635,7 +636,6 @@ for epoch in range(1, NUM_EPOCHS + 1):
             label_vocab
         )
 
-        print("\n[Training] Computing L_align")
         L_al = alignment_loss(
             arc_s, lbl_s,
             hindi_data[sid],
@@ -646,8 +646,15 @@ for epoch in range(1, NUM_EPOCHS + 1):
         loss = L_syn + 0.5 * L_al
         epoch_loss += float(loss)
 
-        print(f"[Training] Total Loss sid={sid}: {float(loss)}")
+        # ----------------------------
+        # Print loss only every 50 steps
+        # ----------------------------
+        if idx % 50 == 0:
+            print(f"  → Step {idx}: Loss = {float(loss):.4f}")
 
+        # ----------------------------
+        # Backprop
+        # ----------------------------
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
@@ -683,7 +690,7 @@ for epoch in range(1, NUM_EPOCHS + 1):
             "id2label": id2label
         }, best_ckpt)
 
-        print(f" New BEST model saved: {best_ckpt}")
+        print(f" ⭐ New BEST model saved: {best_ckpt}")
 
     # =====================================================
     # SAVE LATEST MODEL
