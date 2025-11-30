@@ -583,44 +583,111 @@ print("Label vocab example:", list(label_vocab.items())[:10])
 
 
 
+import os
+import random
+import torch
+
+NUM_EPOCHS = 10               
+CHECKPOINT_DIR = "checkpoints"
+
+os.makedirs(CHECKPOINT_DIR, exist_ok=True)
 
 parser = BiaffineParser(num_labels=len(label_vocab))
 optimizer = torch.optim.Adam(parser.parameters(), lr=2e-5)
-
 id2label = {idx: label for label, idx in label_vocab.items()}
 
+bhojpuri_sentence_ids = list(bhojpuri_data.keys())
 
-for sid in bhojpuri_data.keys():
-    print("\n================ TRAINING SENTENCE", sid, "================")
+best_loss = float("inf")
 
-    Hb = encode_Hb(bhojpuri_data[sid]["tokens"])
-    arc_s, lbl_s = parser(Hb)
-
-    print("\n[Training] Computing L_syn")
-    L_syn = supervised_loss(
-        arc_s, lbl_s,
-        bhojpuri_data[sid]["heads"],
-        bhojpuri_data[sid]["labels"],
-        label_vocab
-    )
-
-    print("\n[Training] Computing L_align")
-    L_al = alignment_loss(
-        arc_s, lbl_s,
-        hindi_data[sid],
-        alignments[sid],
-        label_vocab
-    )
-
-    loss = L_syn + 0.5 * L_al
-    print(f"[Training] Total Loss for sid={sid}: {float(loss)}")
-
-    optimizer.zero_grad()
-    loss.backward()
-    optimizer.step()
+print(f"Starting training for {NUM_EPOCHS} epochs…")
+print(f"Total Bhojpuri sentences = {len(bhojpuri_sentence_ids)}")
 
 
-    import torch
+for epoch in range(1, NUM_EPOCHS + 1):
+
+    print("\n" + "="*60)
+    print(f"==============  EPOCH {epoch}/{NUM_EPOCHS}  ==============")
+    print("="*60)
+
+    random.shuffle(bhojpuri_sentence_ids)
+    epoch_loss = 0.0
+
+    for sid in bhojpuri_sentence_ids:
+
+        print(f"\n================ TRAINING SENTENCE {sid} ================")
+
+        Hb = encode_Hb(bhojpuri_data[sid]["tokens"])
+        arc_s, lbl_s = parser(Hb)
+
+        print("\n[Training] Computing L_syn")
+        L_syn = supervised_loss(
+            arc_s, lbl_s,
+            bhojpuri_data[sid]["heads"],
+            bhojpuri_data[sid]["labels"],
+            label_vocab
+        )
+
+        print("\n[Training] Computing L_align")
+        L_al = alignment_loss(
+            arc_s, lbl_s,
+            hindi_data[sid],
+            alignments[sid],
+            label_vocab
+        )
+
+        loss = L_syn + 0.5 * L_al
+        epoch_loss += float(loss)
+
+        print(f"[Training] Total Loss sid={sid}: {float(loss)}")
+
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+
+    print(f"\n Epoch {epoch} Finished — Total Loss = {epoch_loss:.4f}")
+
+    # =====================================================
+    # SAVE CHECKPOINT FOR THIS EPOCH
+    # =====================================================
+    epoch_ckpt = f"{CHECKPOINT_DIR}/parser_epoch_{epoch}.pt"
+    torch.save({
+        "epoch": epoch,
+        "parser_state": parser.state_dict(),
+        "optimizer_state": optimizer.state_dict(),
+        "label_vocab": label_vocab,
+        "id2label": id2label
+    }, epoch_ckpt)
+
+    print(f" Saved checkpoint: {epoch_ckpt}")
+
+    # =====================================================
+    # SAVE BEST MODEL
+    # =====================================================
+    if epoch_loss < best_loss:
+        best_loss = epoch_loss
+        best_ckpt = f"{CHECKPOINT_DIR}/parser_best.pt"
+
+        torch.save({
+            "epoch": epoch,
+            "parser_state": parser.state_dict(),
+            "optimizer_state": optimizer.state_dict(),
+            "label_vocab": label_vocab,
+            "id2label": id2label
+        }, best_ckpt)
+
+        print(f" New BEST model saved: {best_ckpt}")
+
+    # =====================================================
+    # SAVE LATEST MODEL
+    # =====================================================
+    latest_ckpt = f"{CHECKPOINT_DIR}/parser_latest.pt"
+    torch.save(parser.state_dict(), latest_ckpt)
+    print(f" Latest model saved: {latest_ckpt}")
+
+
+
+import torch
 import json
 
 # Save parser weights
