@@ -1,7 +1,3 @@
-
-
-
-# for cleaned data loading
 import re
 
 def clean_and_parse_alignment(path, output_path, max_pairs=5000):
@@ -44,14 +40,14 @@ def clean_and_parse_alignment(path, output_path, max_pairs=5000):
     if current_id is not None and not skip_this_block:
         valid_blocks[current_id] = temp_lines
 
-    # print(f"Before cleaning: {len(valid_blocks)} valid blocks")
+    print(f"Before cleaning: {len(valid_blocks)} valid blocks")
 
     # =====================
     # RENUMBER 1..N
     # =====================
     new_alignments = {}
     sorted_block_ids = sorted(valid_blocks.keys())
-    # print("Smallest pair:", sorted_block_ids[0], "Largest:", sorted_block_ids[-1])
+    print("Smallest pair:", sorted_block_ids[0], "Largest:", sorted_block_ids[-1])
 
     # We stop renumbering at max_pairs (e.g., 5000)
     kept_ids = sorted_block_ids[:max_pairs]
@@ -74,7 +70,7 @@ def clean_and_parse_alignment(path, output_path, max_pairs=5000):
 
 
 def parse_alignment_file(path):
-    # print("======= Parsing Alignment File =======")
+    print("======= Parsing Alignment File =======")
     alignments = {}
     sent_id = None
 
@@ -98,10 +94,8 @@ def parse_alignment_file(path):
     return alignments
 
 
-
-
 def load_hindi_conllu(path, limit=5000):
-    # print("======= Loading Hindi Conllu =======")
+    print("======= Loading Hindi Conllu =======")
 
     hindi = {}
     sent_id = None
@@ -140,7 +134,7 @@ def load_hindi_conllu(path, limit=5000):
 
 
 def load_bhojpuri_synth(path, limit=5000):
-    # print("======= Loading Bhojpuri Synthetic Conllu =======")
+    print("======= Loading Bhojpuri Synthetic Conllu =======")
 
     bhoj = {}
     sent_id = None
@@ -196,17 +190,11 @@ def load_bhojpuri_synth(path, limit=5000):
     return bhoj
 
 
-
-
-
-    from transformers import AutoTokenizer, AutoModel
+from transformers import AutoTokenizer, AutoModel
 import torch
 
 
 from transformers import AutoTokenizer, AutoModel
-
-# Load encoder from Trankit snapshot
-
 
 import os
 
@@ -231,9 +219,8 @@ print("✓ Encoder loaded")
 print("✓ Tokenizer loaded")
 
 
-# print("Model loaded:", type(encoder))
-# print("Tokenizer loaded:", type(tokenizer))
-
+print("Model loaded:", type(encoder))
+print("Tokenizer loaded:", type(tokenizer))
 
 
 
@@ -241,8 +228,6 @@ print("✓ Tokenizer loaded")
 # ================================
 # CONFIGURATION: FILE PATHS
 # ================================
-
-
 ALIGNMENT_PATH = os.path.join(BASE_DIR, "input", "alignment.A3.final")
 HINDI_CONLLU_PATH = os.path.join(BASE_DIR, "input", "without_shift_hindi_final_merged.conllu")
 BHOJPURI_SYNTH_PATH = os.path.join(BASE_DIR, "input", "bhojpuri_transferred.conllu")
@@ -253,21 +238,8 @@ print("  Alignments:", ALIGNMENT_PATH)
 print("  Hindi Treebank:", HINDI_CONLLU_PATH)
 print("  Bhojpuri Synth:", BHOJPURI_SYNTH_PATH)
 
-# ================================
-# LOAD ALIGNMENTS, HINDI, BHOJPURI
-# ================================
-# alignments = parse_alignment_file(ALIGNMENT_PATH)
-# print("\nAlignment Example:", list(alignments.items())[:1])
-
-# hindi_data = load_hindi_conllu(HINDI_CONLLU_PATH)
-# print("\nHindi Example:", list(hindi_data.items())[:1])
-
-# bhojpuri_data = load_bhojpuri_synth(BHOJPURI_SYNTH_PATH)
-# print("\nBhojpuri Example:", list(bhojpuri_data.items())[:1])
-
 
 # Step 1 — Clean alignment file & parse it
-
 CLEAN_ALIGN = os.path.join(BASE_DIR, "input", "alignment.cleaned")
 alignments = clean_and_parse_alignment(ALIGNMENT_PATH, CLEAN_ALIGN, max_pairs=5000)
 # print("\nAlignment Example:", list(alignments.items())[-1])
@@ -287,9 +259,11 @@ print("Bhojpuri:", len(bhojpuri_data))
 
 
 
+
 def aggregate_subwords_to_words(tokens, tokenizer, hb_subword):
     encoded = tokenizer(tokens, is_split_into_words=True, return_tensors="pt")
-    word_ids = encoded.word_ids(0)
+
+    word_ids = encoded.word_ids(0)  # this stays on CPU (just a list)
 
     word_embeddings = []
     current_word = []
@@ -297,52 +271,44 @@ def aggregate_subwords_to_words(tokens, tokenizer, hb_subword):
 
     for i, w_id in enumerate(word_ids):
         if w_id is None:
-            # Ignore special tokens and unaligned tokens
             continue
 
         if current_id is None:
-            # First valid word
             current_id = w_id
 
         if w_id != current_id:
-            # Aggregate previous word
-            if len(current_word) > 0:
-                emb = torch.stack(current_word, dim=0).mean(dim=0)
-                word_embeddings.append(emb)
-
+            emb = torch.stack(current_word, dim=0).mean(dim=0)
+            word_embeddings.append(emb)
             current_word = []
             current_id = w_id
 
-        current_word.append(hb_subword[i])
+        current_word.append(hb_subword[i])   # already on GPU
 
-    # Last word
     if len(current_word) > 0:
         emb = torch.stack(current_word, dim=0).mean(dim=0)
         word_embeddings.append(emb)
 
-    return torch.stack(word_embeddings, dim=0)
+    return torch.stack(word_embeddings, dim=0).to(device)
 
 
 
 def encode_Hb(tokens):
-    # print("\n[Hb] Encoding sentence:")
-    # print(" ", tokens[:20], "..." if len(tokens) > 20 else "")
-
-    # Word-aware tokenization
+    # Tokenize
     encoded = tokenizer(tokens, is_split_into_words=True, return_tensors="pt")
-    # print("[Hb] Subword IDs:", encoded["input_ids"].shape)
+
+    # ---- MOVE TO GPU ----
+    for k in encoded:
+        encoded[k] = encoded[k].to(device)
 
     with torch.no_grad():
         out = encoder(**encoded)
 
-    hb_sub = out.last_hidden_state.squeeze(0)    # [subwords, 768]
+    hb_sub = out.last_hidden_state.squeeze(0)   # [subwords, hidden]
 
-    # Aggregate to word-level
+    # Aggregate to word-level (hb_sub is already on GPU)
     Hb_word = aggregate_subwords_to_words(tokens, tokenizer, hb_sub)
 
-    # print("[Hb] Word-level Hb shape:", Hb_word.shape)
-    return Hb_word
-
+    return Hb_word.to(device)
 
 
 
@@ -371,12 +337,9 @@ class BiaffineParser(nn.Module):
         self.lbl_biaffine = nn.Bilinear(lbl_hidden, lbl_hidden, num_labels)
 
     def forward(self, Hb):
-        """
-        Hb: (N, hidden)
-        Returns:
-            arc_scores: (N, N)
-            lbl_scores: (N, N, num_labels)
-        """
+
+        device = Hb.device       # <—— IMPORTANT: detect which device we're on
+
         N = Hb.size(0)
 
         Hh = self.arc_head(Hb)      # (N, A)
@@ -386,8 +349,6 @@ class BiaffineParser(nn.Module):
         Ld = self.lbl_dep(Hb)       # (N, L)
 
         # ---------- Vectorized biaffine ARC ----------
-        # arc_scores[d,h] = Hd[d]ᵀ * W * Hh[h]
-        # → (N, A) @ W → (N, A) → bmm → (N,N)
         W_arc = self.arc_biaffine.weight.squeeze(0)       # (A, A)
         b_arc = self.arc_biaffine.bias                    # (1)
 
@@ -395,17 +356,20 @@ class BiaffineParser(nn.Module):
         arc_scores = arc_scores + b_arc
 
         # ---------- Vectorized biaffine LABEL ----------
-        # For labels: (N,A) W (A,L) expansions
         W_lbl = self.lbl_biaffine.weight                  # (num_labels, L, L)
         b_lbl = self.lbl_biaffine.bias                    # (num_labels)
 
-        # Compute Ld W Lhᵀ for all labels
         lbl_scores = torch.einsum(
             "di, lij, hj -> dhl",
             Ld, W_lbl, Lh
         )  # (N, N, num_labels)
 
         lbl_scores = lbl_scores + b_lbl
+
+        # -------------- ADD THESE TWO LINES --------------
+        arc_scores = arc_scores.to(device)
+        lbl_scores = lbl_scores.to(device)
+        # -------------------------------------------------
 
         return arc_scores, lbl_scores
 
@@ -454,15 +418,19 @@ def alignment_loss(arc_scores, lbl_scores, Th, aligns, label_vocab):
         # gold_arc = torch.tensor([mapped_head])
         gold_arc = torch.tensor([mapped_head], device=arc_scores.device)
 
+        #--------------
+
         loss_arc += F.cross_entropy(pred_arc, gold_arc)
 
         # Label supervision
+
         # ------------added for optimisation
         # pred_lbl = lbl_scores[bh, mapped_head, :].unsqueeze(0)
         # gold_lbl = torch.tensor([label_vocab[mapped_label]])
         pred_lbl = lbl_scores[bh, mapped_head].unsqueeze(0)
         gold_lbl = torch.tensor([label_vocab[mapped_label]], device=arc_scores.device)
         #---------------------
+
 
         loss_lbl += F.cross_entropy(pred_lbl, gold_lbl)
 
@@ -472,7 +440,6 @@ def alignment_loss(arc_scores, lbl_scores, Th, aligns, label_vocab):
         return torch.tensor(0.0)
 
     return (loss_arc + loss_lbl) / count
-
 
 
 
@@ -496,46 +463,36 @@ def supervised_loss(arc_scores, lbl_scores, heads, labels, label_vocab):
     heads_tensor = torch.tensor(fixed_heads)
 
     # ---------------------------
-    # ARC LOSS
+    # ARC LOSS (vectorized)
     # ---------------------------
-    loss_arc = F.cross_entropy(arc_scores, heads_tensor)
-    # print("  Arc CE:", float(loss_arc))
+    heads_tensor = torch.tensor(fixed_heads, device=arc_scores.device)
+
+    # head = -1 → ignore this token completely
+    loss_arc = F.cross_entropy(
+        arc_scores,
+        heads_tensor,
+        ignore_index=-1
+    )
 
     # ---------------------------
-    # LABEL LOSS (use gold head per token)
+    # LABEL LOSS (fully vectorized)
     # ---------------------------
-    label_preds = []
+    # pick label logits: lbl_scores[d, heads[d], :]
+    dep_indices = torch.arange(N, device=arc_scores.device)
+    head_indices = heads_tensor.clamp(min=0, max=N-1)
 
-    for d in range(N):
-        h = fixed_heads[d]
+    label_preds = lbl_scores[dep_indices, head_indices]  # (N, num_labels)
 
-        # avoid crash for impossible heads
-        if h < 0 or h >= lbl_scores.shape[1]:
-            h = 0
-
-        label_preds.append(lbl_scores[d, h, :].unsqueeze(0))
-
-    label_preds = torch.cat(label_preds, dim=0)  # (N, num_labels)
-
-    # Fix missing labels
-    gold_lbl_ids = []
-    for lab in labels:
-        if lab not in label_vocab:
-            gold_lbl_ids.append(label_vocab["dep"])
-        else:
-            gold_lbl_ids.append(label_vocab[lab])
-
-    # ----------added for optimisation
-    # gold_lbl_ids = torch.tensor(gold_lbl_ids)
-    gold_lbl_ids = torch.tensor(gold_lbl_ids, device=arc_scores.device)
-    #---------------
-
+    # gold labels → ids
+    gold_lbl_ids = torch.tensor(
+        [label_vocab.get(l, label_vocab["dep"]) for l in labels],
+        device=arc_scores.device
+    )
 
     loss_lbl = F.cross_entropy(label_preds, gold_lbl_ids)
-    # print("  Label CE:", float(loss_lbl))
+
 
     return loss_arc + loss_lbl
-
 
 
 
@@ -568,16 +525,28 @@ print("Label vocab example:", list(label_vocab.items())[:10])
 
 
 
+
+
 import os
 import random
 import torch
 
-NUM_EPOCHS = 5
-CHECKPOINT_DIR = "checkpoints"
+NUM_EPOCHS = 10
 
+CHECKPOINT_DIR = os.path.join(BASE_DIR, "checkpoints")
 os.makedirs(CHECKPOINT_DIR, exist_ok=True)
 
-parser = BiaffineParser(num_labels=len(label_vocab))
+
+# --------------------------------------
+# Select GPU if available
+# --------------------------------------
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print("Using device:", device)
+
+# Move encoder (XLM-R) to GPU
+encoder.to(device)
+
+parser = BiaffineParser(num_labels=len(label_vocab)).to(device)
 optimizer = torch.optim.Adam(parser.parameters(), lr=2e-5)
 id2label = {idx: label for label, idx in label_vocab.items()}
 
@@ -589,20 +558,87 @@ best_loss = float("inf")
 print(f"Starting training for {NUM_EPOCHS} epochs…")
 print(f"Total Bhojpuri sentences = {TOTAL_STEPS}")
 
+
+
+
+
 # -----------------------added for optimisation
 
 print("Caching all Hb embeddings...")
 Hb_cache = {}
 
-for sid in bhojpuri_sentence_ids:
-    Hb_cache[sid] = encode_Hb(bhojpuri_data[sid]["tokens"])
+CACHE_PRINT_INTERVAL = 500   # ← change this number as you like
+
+for i, sid in enumerate(bhojpuri_sentence_ids, start=1):
+
+    Hb_cache[sid] = encode_Hb(bhojpuri_data[sid]["tokens"]).to(device)
+
+    # ----- progress print every interval -----
+    if i == 1 or i % CACHE_PRINT_INTERVAL == 0:
+        print(f"  Cached {i}/{TOTAL_STEPS} sentences "
+              f"({i / TOTAL_STEPS * 100:.1f}%)")
 
 print("✓ Finished caching HB vectors.")
+
 
 #---------------------------
 
 
-for epoch in range(1, NUM_EPOCHS + 1):
+
+
+# --------------------------------------------
+# CHECKPOINT LOADING (Resume if exists)
+# --------------------------------------------
+
+latest_ckpt = os.path.join(CHECKPOINT_DIR, "parser_latest.pt")
+resume = False
+
+if os.path.exists(latest_ckpt):
+    print(" Found existing checkpoint — checking format...")
+
+    ckpt = torch.load(latest_ckpt, map_location="cpu")
+
+    # ----------------------------
+    # CASE 1 — old format (just state_dict)
+    # ----------------------------
+    if isinstance(ckpt, dict) and "parser_state" not in ckpt:
+        print("⚠ Old checkpoint format detected (state_dict only).")
+        parser.load_state_dict(ckpt)
+        print("✓ Loaded old checkpoint weights.")
+
+        # Start from epoch 1, no optimizer state, no best loss
+        start_epoch = 1
+        best_loss = float("inf")
+        resume = True
+
+    # ----------------------------
+    # CASE 2 — new format (full resume dictionary)
+    # ----------------------------
+    else:
+        print("✓ New checkpoint format detected. Resuming full training...")
+        parser.load_state_dict(ckpt["parser_state"])
+        optimizer.load_state_dict(ckpt["optimizer_state"])
+
+        start_epoch = ckpt["epoch"] + 1
+        best_loss = ckpt["best_loss"]
+        resume = True
+
+else:
+    print(" No checkpoint found — starting fresh training...")
+    start_epoch = 1
+    best_loss = float("inf")
+
+
+
+
+
+
+
+
+# ------------------------------------------------
+# TRAINING LOOP (best + latest checkpoint only)
+# ------------------------------------------------
+for epoch in range(start_epoch, NUM_EPOCHS + 1):
 
     print("\n" + "="*60)
     print(f"==============  EPOCH {epoch}/{NUM_EPOCHS}  ==============")
@@ -613,22 +649,14 @@ for epoch in range(1, NUM_EPOCHS + 1):
 
     for idx, sid in enumerate(bhojpuri_sentence_ids, start=1):
 
-        # ----------------------------
-        # Progress bar (kept)
-        # ----------------------------
         if idx % 20 == 0 or idx == 1:
             progress = (idx / TOTAL_STEPS) * 100
             print(f"[Epoch {epoch}] Progress: {progress:5.1f}%  ({idx}/{TOTAL_STEPS})")
 
-        # ----------------------------
-        # Encode → Forward → Loss
-        # ----------------------------
+        if idx % 200 == 0:
+            print(f" L_syn={L_syn.item():.4f}  | L_al={L_al.item():.4f}  | align_count={len(alignments[sid])}")
 
-
-        # Hb = encode_Hb(bhojpuri_data[sid]["tokens"])
-        # ------------added for opitmisation
         Hb = Hb_cache[sid]
-        #-------------------
 
         arc_s, lbl_s = parser(Hb)
 
@@ -649,58 +677,47 @@ for epoch in range(1, NUM_EPOCHS + 1):
         loss = L_syn + 0.5 * L_al
         epoch_loss += float(loss)
 
-        # ----------------------------
-        # Print loss only every 50 steps
-        # ----------------------------
         if idx % 50 == 0:
             print(f"  → Step {idx}: Loss = {float(loss):.4f}")
 
-        # ----------------------------
-        # Backprop
-        # ----------------------------
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
 
     print(f"\n Epoch {epoch} Finished — Total Loss = {epoch_loss:.4f}")
 
-    # =====================================================
-    # SAVE CHECKPOINT FOR THIS EPOCH
-    # =====================================================
-    epoch_ckpt = f"{CHECKPOINT_DIR}/parser_epoch_{epoch}.pt"
-    torch.save({
-        "epoch": epoch,
-        "parser_state": parser.state_dict(),
-        "optimizer_state": optimizer.state_dict(),
-        "label_vocab": label_vocab,
-        "id2label": id2label
-    }, epoch_ckpt)
-
-    print(f" Saved checkpoint: {epoch_ckpt}")
-
-    # =====================================================
-    # SAVE BEST MODEL
-    # =====================================================
+    # -----------------------------
+    # SAVE BEST MODEL ONLY
+    # -----------------------------
     if epoch_loss < best_loss:
         best_loss = epoch_loss
-        best_ckpt = f"{CHECKPOINT_DIR}/parser_best.pt"
+        best_ckpt = os.path.join(CHECKPOINT_DIR, "parser_best.pt")
 
         torch.save({
             "epoch": epoch,
             "parser_state": parser.state_dict(),
             "optimizer_state": optimizer.state_dict(),
+            "best_loss": best_loss,
             "label_vocab": label_vocab,
             "id2label": id2label
         }, best_ckpt)
 
-        print(f" ⭐ New BEST model saved: {best_ckpt}")
+        print(f"  New BEST model saved: {best_ckpt}")
 
-    # =====================================================
-    # SAVE LATEST MODEL
-    # =====================================================
-    latest_ckpt = f"{CHECKPOINT_DIR}/parser_latest.pt"
-    torch.save(parser.state_dict(), latest_ckpt)
-    print(f" Latest model saved: {latest_ckpt}")
+    # -----------------------------
+    # SAVE LATEST CHECKPOINT (resume)
+    # -----------------------------
+    torch.save({
+        "epoch": epoch,
+        "parser_state": parser.state_dict(),
+        "optimizer_state": optimizer.state_dict(),
+        "best_loss": best_loss,
+        "label_vocab": label_vocab,
+        "id2label": id2label
+    }, latest_ckpt)
+
+    print(f"  Latest model saved: {latest_ckpt}")
+
 
 
 
@@ -709,18 +726,17 @@ import torch
 import json
 
 # Save parser weights
-torch.save(parser.state_dict(), "bhojpuri_biaffine_parser.pt")
+torch.save(parser.state_dict(), os.path.join(BASE_DIR, "bhojpuri_biaffine_parser.pt"))
 print("✓ Parser saved")
 
 # Save vocab
-with open("label_vocab.json", "w", encoding="utf-8") as f:
+with open(os.path.join(BASE_DIR, "label_vocab.json"), "w", encoding="utf-8") as f:
     json.dump(label_vocab, f, ensure_ascii=False, indent=2)
 
-with open("id2label.json", "w", encoding="utf-8") as f:
+with open(os.path.join(BASE_DIR, "id2label.json"), "w", encoding="utf-8") as f:
     json.dump(id2label, f, ensure_ascii=False, indent=2)
 
 print("✓ Vocab saved")
-
 
 
 
@@ -757,16 +773,17 @@ def load_gold_conllu(path):
     print("Total gold sentences:", len(data))
     return data
 
-gold_test = load_gold_conllu("bho_bhtb-ud-test.conllu")
+gold_path = os.path.join(BASE_DIR, "bho_bhtb-ud-test.conllu")
+gold_test = load_gold_conllu(gold_path)
 
 
-
-
-parser = BiaffineParser(num_labels=len(label_vocab))
-parser.load_state_dict(torch.load("bhojpuri_biaffine_parser.pt"))
+parser = BiaffineParser(num_labels=len(label_vocab)).to(device)
+parser_path = os.path.join(BASE_DIR, "bhojpuri_biaffine_parser.pt")
+parser.load_state_dict(torch.load(parser_path, map_location=device))
 parser.eval()
 
 print("✓ Parser loaded for evaluation")
+
 
 
 def parse_sentence(tokens):
@@ -781,7 +798,6 @@ def parse_sentence(tokens):
         predicted_labels.append(id2label[str(lbl_id)] if str(lbl_id) in id2label else id2label[lbl_id])
 
     return predicted_heads, predicted_labels
-
 
 
 
@@ -819,6 +835,4 @@ uas, las = evaluate(gold_test)
 print("FINAL RESULTS:")
 print("UAS:", uas)
 print("LAS:", las)
-
-
 
