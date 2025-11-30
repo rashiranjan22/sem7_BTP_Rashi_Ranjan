@@ -76,3 +76,53 @@ running_model/
 python -u G_model_added_biaffine.py
 ```
 
+
+## 6. Alignment Cleaning Step
+the function ```clean_and_parse_alignment``` creates a cleaned and renumbered alignment file ```running_model/input/alignment.cleaned```
+
+## 7. Checkpoint Files Saved
+All model checkpoints are saved automatically inside:
+
+``` running_model/checkpoints/```
+The script produces:
+```
+| File                | Meaning                                |
+| ------------------- | -------------------------------------- |
+| `parser_epoch_X.pt` | Model + optimizer state for each epoch |
+| `parser_latest.pt`  | Latest model (state dict only)         |
+| `parser_best.pt`    | Model with **lowest epoch loss**       |
+
+```
+Directory example:
+```
+checkpoints/
+├── parser_epoch_1.pt
+├── parser_epoch_2.pt
+├── parser_epoch_3.pt
+├── parser_best.pt
+└── parser_latest.pt
+```
+
+
+## 8. Final Saved Model & Vocab
+
+At the end of training, the script writes:
+```
+
+| File                          | Description                 |
+| ----------------------------- | --------------------------- |
+| `bhojpuri_biaffine_parser.pt` | Final model weights         |
+| `label_vocab.json`            | Mapping: label → integer ID |
+| `id2label.json`               | Reverse mapping: ID → label |
+
+```
+These are stored in:
+```
+running_model/
+```
+
+You will see:
+```
+✓ Parser saved
+✓ Vocab saved
+```
