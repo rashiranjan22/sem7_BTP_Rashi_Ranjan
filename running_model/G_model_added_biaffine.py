@@ -1,33 +1,4 @@
 
-# running_model\colab_G_model_added_biaffine.ipynb shows invalid but its present
-
-# conda create --name my_env python 3.9
-# conda activate my_env
-
-# pip install -r requirements.txt
-
-#  cd running_model
-
-
-# git clone https://github.com/nlp-uoregon/trankit.git  (if not already )
-# cd trankit
-
-
-# # Install in editable mode
-# pip install -e .
-
-# python run_trankit.py in trankit folder 
-# -- it creates a cache folder  , which contains the models 
-#  and gives the confirmation that the model works , using an example text
-# cd..
-# now in "running_model" folder
-#  run this file 
-
-
-
-#  paths at , 3 input + 1 input + model path 
-
-
 # for cleaned data loading
 import re
 
