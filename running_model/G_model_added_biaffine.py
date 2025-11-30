@@ -587,7 +587,7 @@ import os
 import random
 import torch
 
-NUM_EPOCHS = 10               
+NUM_EPOCHS = 5
 CHECKPOINT_DIR = "checkpoints"
 
 os.makedirs(CHECKPOINT_DIR, exist_ok=True)
@@ -597,11 +597,12 @@ optimizer = torch.optim.Adam(parser.parameters(), lr=2e-5)
 id2label = {idx: label for label, idx in label_vocab.items()}
 
 bhojpuri_sentence_ids = list(bhojpuri_data.keys())
+TOTAL_STEPS = len(bhojpuri_sentence_ids)
 
 best_loss = float("inf")
 
 print(f"Starting training for {NUM_EPOCHS} epochs…")
-print(f"Total Bhojpuri sentences = {len(bhojpuri_sentence_ids)}")
+print(f"Total Bhojpuri sentences = {TOTAL_STEPS}")
 
 
 for epoch in range(1, NUM_EPOCHS + 1):
@@ -613,9 +614,15 @@ for epoch in range(1, NUM_EPOCHS + 1):
     random.shuffle(bhojpuri_sentence_ids)
     epoch_loss = 0.0
 
-    for sid in bhojpuri_sentence_ids:
+    # ------------------------------------
+    # TRAINING LOOP WITH PERCENTAGE
+    # ------------------------------------
+    for idx, sid in enumerate(bhojpuri_sentence_ids, start=1):
 
-        print(f"\n================ TRAINING SENTENCE {sid} ================")
+        progress = (idx / TOTAL_STEPS) * 100
+        print(f"\n[Epoch {epoch}] Progress: {progress:5.1f}%  ({idx}/{TOTAL_STEPS})")
+
+        print(f"================ TRAINING SENTENCE {sid} ================")
 
         Hb = encode_Hb(bhojpuri_data[sid]["tokens"])
         arc_s, lbl_s = parser(Hb)
@@ -684,6 +691,7 @@ for epoch in range(1, NUM_EPOCHS + 1):
     latest_ckpt = f"{CHECKPOINT_DIR}/parser_latest.pt"
     torch.save(parser.state_dict(), latest_ckpt)
     print(f" Latest model saved: {latest_ckpt}")
+
 
 
 
