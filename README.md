@@ -74,7 +74,7 @@ running_model/
 ## 5. Run the Training
 > currently in running_model folder
 ```
-python -u G_model_added_biaffine.py
+python -u G_model_added_biaffine_optimised.py
 ```
 
 
