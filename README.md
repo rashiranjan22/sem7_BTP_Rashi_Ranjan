@@ -49,6 +49,7 @@ running_model/
 │
 ├── trankit/
 │   └── cache/xlm-roberta-base/models--xlm-roberta-base/snapshots/<HASH>/
+|   ___ run_trankit.py
 │
 ├── input/
 │   ├── alignment.A3.final
