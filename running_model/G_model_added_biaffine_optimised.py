@@ -531,7 +531,7 @@ import os
 import random
 import torch
 
-NUM_EPOCHS = 10
+NUM_EPOCHS = 100
 
 CHECKPOINT_DIR = os.path.join(BASE_DIR, "checkpoints")
 os.makedirs(CHECKPOINT_DIR, exist_ok=True)
