@@ -128,8 +128,11 @@ You will see:
 ✓ Parser saved
 ✓ Vocab saved
 ```
+---
+Model description in PARSER.md
 
+--- 
 
-Rashi Ranjan 
-22074025
+Rashi Ranjan <br>
+22074025 <br>
 CSE IDD
