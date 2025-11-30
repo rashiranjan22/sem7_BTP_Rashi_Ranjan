@@ -30,8 +30,8 @@ The core of the model is a custom implementation of the standard dependency pars
 
 * **Architecture:** The $\mathbf{BiaffineParser}$ class takes the Bhojpuri embeddings ($\mathbf{H}_{B}$) as input.
 * **MLP Projection:** The input $\mathbf{H}_{B}$ is projected into specialized representations:
-    * Heads and Dependents for $\mathbf{Arcs}$ ($\mathbf{H}_{h}, \mathbf{H}_{d}$).
-    * Heads and Dependents for $\mathbf{Labels}$ ($\mathbf{L}_{h}, \mathbf{L}_{d}$).
+    * Heads and Dependents for $\mathbf{Arcs}$ ($\mathbf{H_h}$, $\mathbf{H}_{d}$).
+    * Heads and Dependents for $\mathbf{Labels}$ ($\mathbf{L_h}, \mathbf{L}_{d}$).
 * **Biaffine Attention:** A **True Biaffine** transformation (using $nn.Bilinear$) is applied to compute the **Arc Scores** and **Label Scores** ($\mathbf{P}_{B}^{pred}$).
 
 ---
@@ -46,7 +46,7 @@ $$L_{Total} = L_{Syn} + \lambda \cdot L_{Al} \quad (\text{where } \lambda = 0.5)
 
 #### **Supervised Loss ($L_{Syn}$)**
 * **Source:** $\mathbf{Y}_{B}^{syn}$ (Bhojpuri synthetic labels/heads).
-* **Mechanism:** Calculates a standard **Cross-Entropy Loss** between the predicted scores ($\mathbf{P}_{B}^{pred}$) and the **noisy synthetic labels** ($\mathbf{Y}_{B}^{syn}$). This trains $\mathbf{P}_{Synth}$ to capture the basic structure of the synthetic Bhojpuri data.
+* **Mechanism:** Calculates a standard **Cross-Entropy Loss** between the predicted scores ($\mathbf{P}_{B}^{pred}$) and the **noisy synthetic labels** ($\mathbf{Y_B}^{syn}$). This trains $\mathbf{P_Synth}$ to capture the basic structure of the synthetic Bhojpuri data.
 
 #### **Alignment Loss ($L_{Al}$ — The Constraint)**
 * **Source:** $\mathbf{T}_{H}$ (Hindi gold heads/labels) and the $\mathbf{Alignment}$ map.
@@ -54,7 +54,7 @@ $$L_{Total} = L_{Syn} + \lambda \cdot L_{Al} \quad (\text{where } \lambda = 0.5)
     1.  The loop iterates over the **aligned word pairs** $(bh, hi)$.
     2.  For each Bhojpuri word ($bh$), the gold Hindi head/label is **mapped** via the alignment to form a target.
     3.  A **Cross-Entropy Loss** is calculated between $\mathbf{P}_{B}^{pred}$ and this **mapped gold Hindi target**.
-    4.  **Effect:** This loss pulls the $\mathbf{P}_{Synth}$'s predictions toward the reliable **gold Hindi structure**, serving to correct the noise in $\mathbf{Y}_{B}^{syn}$.
+    4.  **Effect:** This loss pulls the $\mathbf{P_Synth}$'s predictions toward the reliable **gold Hindi structure**, serving to correct the noise in $\mathbf{Y}_{B}^{syn}$.
 
 * **Optimization:** The $L_{Total}$ is backpropagated to update the weights of the $\mathbf{P}_{Synth}$ Biaffine layers.
 
