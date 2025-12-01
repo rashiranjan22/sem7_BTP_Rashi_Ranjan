@@ -547,7 +547,7 @@ print("Using device:", device)
 encoder.to(device)
 
 parser = BiaffineParser(num_labels=len(label_vocab)).to(device)
-optimizer = torch.optim.Adam(parser.parameters(), lr=2e-5)
+optimizer = torch.optim.Adam(parser.parameters(), lr=1e-3)
 id2label = {idx: label for label, idx in label_vocab.items()}
 
 bhojpuri_sentence_ids = list(bhojpuri_data.keys())
