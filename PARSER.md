@@ -3,6 +3,7 @@
 This document describes the $\mathbf{Constrained}$ $\mathbf{Cross-Lingual}$ $\mathbf{Parsing}$ $\mathbf{Pipeline}$ implemented to train a Bhojpuri dependency parser using synthetic data and a gold Hindi constraint.
 
 ---
+![alt text](model_flowchart.png)
 
 ### 1. Data Loading and Feature Preparation
 
