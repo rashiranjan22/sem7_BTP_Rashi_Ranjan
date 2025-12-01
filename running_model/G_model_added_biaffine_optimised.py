@@ -531,7 +531,7 @@ import os
 import random
 import torch
 
-NUM_EPOCHS = 100
+NUM_EPOCHS = 1000
 
 CHECKPOINT_DIR = os.path.join(BASE_DIR, "checkpoints")
 os.makedirs(CHECKPOINT_DIR, exist_ok=True)
@@ -649,11 +649,11 @@ for epoch in range(start_epoch, NUM_EPOCHS + 1):
 
     for idx, sid in enumerate(bhojpuri_sentence_ids, start=1):
 
-        if idx % 20 == 0 or idx == 1:
+        if idx % 500 == 0 or idx == 1:
             progress = (idx / TOTAL_STEPS) * 100
             print(f"[Epoch {epoch}] Progress: {progress:5.1f}%  ({idx}/{TOTAL_STEPS})")
 
-        if idx % 200 == 0:
+        if idx % 500 == 0:
             print(f" L_syn={L_syn.item():.4f}  | L_al={L_al.item():.4f}  | align_count={len(alignments[sid])}")
 
         Hb = Hb_cache[sid]
