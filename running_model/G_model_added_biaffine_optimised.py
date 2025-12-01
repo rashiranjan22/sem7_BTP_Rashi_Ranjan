@@ -649,11 +649,11 @@ for epoch in range(start_epoch, NUM_EPOCHS + 1):
 
     for idx, sid in enumerate(bhojpuri_sentence_ids, start=1):
 
-        if idx % 500 == 0 or idx == 1:
+        if idx % 1000 == 0 or idx == 1:
             progress = (idx / TOTAL_STEPS) * 100
             print(f"[Epoch {epoch}] Progress: {progress:5.1f}%  ({idx}/{TOTAL_STEPS})")
 
-        if idx % 500 == 0:
+        if idx % 1000 == 0:
             print(f" L_syn={L_syn.item():.4f}  | L_al={L_al.item():.4f}  | align_count={len(alignments[sid])}")
 
         Hb = Hb_cache[sid]
@@ -677,7 +677,7 @@ for epoch in range(start_epoch, NUM_EPOCHS + 1):
         loss = L_syn + 0.5 * L_al
         epoch_loss += float(loss)
 
-        if idx % 50 == 0:
+        if idx % 1000 == 0:
             print(f"  → Step {idx}: Loss = {float(loss):.4f}")
 
         optimizer.zero_grad()
